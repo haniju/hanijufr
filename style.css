@@ -1,11 +1,10 @@
-		@font-face {
- 			font-family: 'Systematic J'; src: 'images/9SYSTEMA.TTF';
-			}
-			:root {
+
+		@import url('https://fonts.googleapis.com/css?family=Exo:100,500,700,900');
+		:root {
 				--y0: #4B65C9;
 				--y1: #4761BF;
-				--y2: #445DB8;
-				--y3: #425AB3;
+				--y2: #425AB3;
+				--y3: #3E55AB;
 				--b: #DEDEDE;
 				--h0: #FBB03B;
 			}
@@ -103,11 +102,48 @@
 	margin: auto;
 	padding: 10px 10px 10px 10px;
 }
+/*page pédagogique*/
+.container_p{
+	display: flex;
+	flex-direction: column;
+	max-width: 975px;
+	min-width: 300px;
+	margin: auto;
+	padding: 10px 10px 10px 10px;
+}
+.container_p:hover{
+	display: flex;
+	flex-direction: column;
+	max-width: 975px;
+	min-width: 300px;
+	margin: auto;
+	padding: 10px 10px 10px 10px;
+}
+.title_code, .container_p:hover .title{
+	display: none
+}
+.container_p:hover .title_code {
+  display: block
+}
+textarea {
+	background-color: unset;
+	border: none;
+	width: 100%;
+	height: 100%;
+	resize: none;
+}
 .title {
 	margin: auto;
 	text-align: center;
 	background-color: var(--y1);
-	padding: 5px 5px 5px 5px;
+	padding: 15px 25px 15px 25px;
+}
+.title_code {
+	margin: auto;
+	background-color: var(--y1);
+	padding: 15px 25px 15px 25px;
+	max-width: 400px;
+	height: 300px;
 }
 .space {
 	margin: auto;
@@ -118,7 +154,7 @@
 .bodyContent{
 	display: flex;
 	flex-direction: column;
-	padding: 10px 10px 10px 10px;
+	padding: 15px 15px 15px 15px;
 	margin: auto;
 	margin-bottom: 60px;
 	text-align: left;
@@ -133,16 +169,15 @@
 	align-content: flex-start;
 	max-width: 770px;/*
 	min-width: 220px;*/
-	margin: 5px 5px 5px 5px;
+	margin: 10px 5px 5px 5px;
 	background-color: var(--y2);
-	padding: 5px 5px 5px 5px;
+	padding: 10px 10px 10px 10px;
 }
 .project-box {
 	display: flex;
   flex-direction: column;
   min-width: 200px;
 	max-width: 350px;
-	padding: 10px 10px 10px 10px;
 	margin: 5px 5px 5px 5px;
   align-content: center;
 	justify-content: center;
@@ -152,18 +187,30 @@
   display: flex;
 	flex-direction: column;
   flex-basis: 1;
+	padding: 15px 10px 10px 10px;
+	text-align: center;
 }
 .project-box-b {
 	display: flex;
   flex-direction: row;
   justify-content: center;
 	align-items: center;
+	padding: 10px 10px 10px 10px;
 }
 .project-button {
 	flex-basis: content;
 	margin: 0px 5px 0px 5px;
 	padding: 5px 5px 5px 5px;
 	background-color: var(--y1)
+}
+.project-button-i {
+	flex-basis: content;
+	margin: 0px 5px 0px 5px;
+	padding: 5px 5px 5px 5px;
+	background-color: var(--y1)
+}
+.project-button:hover {
+	background-color: var(--h0);
 }
 .footer {
 	display: flex;
@@ -189,6 +236,7 @@ h1{
 	line-height:87%;
 	text-align: center;
 	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
 	color:var(--b);
 	font-family: 'Roboto Slab', serif;
 	font-weight:700;
@@ -199,20 +247,24 @@ h2{
 	font-size:20px;
 	line-height:140%;
 	color:var(--b);
-	font-family: 'Roboto Slab', serif;
-	font-weight: 300;
+	font-family: 'Exo', sans-serif;
+	font-weight: 200;
 	text-decoration: uppercase;
 	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	letter-spacing:2px;
 }
 h3{
 	font-size:17px;
 	line-height:140%;
 	text-align: center;
-	font-weight:500;
+	font-weight:400;
 	color:var(--b);
 	font-family: 'Roboto Slab', serif;
 	letter-spacing:1px;
 	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	text-transform: uppercase;
 }
 h4{
 	font-family:'Roboto Slab', serif;
@@ -224,27 +276,34 @@ h4{
 /*	-webkit-text-size-adjust:none;*/
 	letter-spacing:1px;
 	margin:28px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+
 }
 p{
-	line-height:120%;
-	font-family:'Roboto Slab', serif;
+	line-height:130%;
+	font-family: 'Exo', sans-serif;
 	font-size:16px;
 	color:var(--b);
-	font-weight:300;
-	text-align:justify-left;
+	font-weight:100;
 /*	-webkit-text-size-adjust:none;*/
-	letter-spacing:1px;
+	letter-spacing:2px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
 }
 a {
-	font-family:'Roboto Slab', serif;
-	font-weight: 500;
+	font-family: 'Exo', sans-serif;
+	font-weight: 100;
+	font-size: 16px;
+	letter-spacing:2px;
 	color:var(--b);
+	text-decoration: none;
 }
 a:link,a:active,a:visited,a{
 	color:var(--b);
 }
 a:hover{
-	color: var(--h0);
+	color: var(--y3);
+	font-weight: 500;
 }
 .button:link,.button:active,.button:visited,.button,.button span{
 	background-color:#ffff00 !important;
