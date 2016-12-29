@@ -2,9 +2,9 @@
 		@import url('https://fonts.googleapis.com/css?family=Exo:100,500,700,900');
 		:root {
 				--y0: #4B65C9;
-				--y1: #4761BF;
-				--y2: #425AB3;
-				--y3: #3E55AB;
+				--y1: #4862C2;
+				--y2: #4660BF;
+				--y3: #445EBA;
 				--b: #DEDEDE;
 				--h0: #FBB03B;
 			}
@@ -147,6 +147,9 @@
   align-content: center;
 	justify-content: center;
 	background-color: var(--y3);
+	border-style: solid;
+	border-color: var(--y0);
+	border-width: 1px;
 }
 .project-box-a {
   display: flex;
@@ -172,7 +175,6 @@
 	flex-basis: content;
 	margin: 0px 5px 0px 5px;
 	padding: 5px 5px 5px 5px;
-	background-color: var(--y1)
 }
 .project-button:hover {
 	background-color: var(--h0);
@@ -228,17 +230,15 @@ h3{
 	text-transform: uppercase;
 }
 h4{
-	font-family:'Roboto Slab', serif;
-	font-size:17px;
+	line-height:130%;
+	font-family: 'Exo', sans-serif;
+	font-size:16px;
 	color:var(--b);
-	font-weight:500;
-	text-align:justify;
-	line-height:20%;
+	font-weight:400;
 /*	-webkit-text-size-adjust:none;*/
-	letter-spacing:1px;
-	margin:28px 0px 0px 0px;
+	letter-spacing:2px;
+	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
-
 }
 p{
 	line-height:130%;
