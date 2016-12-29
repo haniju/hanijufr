@@ -1,10 +1,11 @@
 
-		@import url('https://fonts.googleapis.com/css?family=Exo:100,500,700,900');
+		@import url('https://fonts.googleapis.com/css?family=Exo:200,300,400,500,700,900');
 		:root {
-				--y0: #4B65C9;
-				--y1: #4862C2;
-				--y2: #4660BF;
+				--y0: white;
+				--y1: white;
+				--y2: #A8BEFF;
 				--y3: #445EBA;
+				--y4: #4B65C9;
 				--b: #DEDEDE;
 				--h0: #FBB03B;
 			}
@@ -15,45 +16,10 @@
 				--y3: #EADC20;
 				--b: #404040;
 			}*/
-/*		.wrapper{
-			width:550px;
-			margin:0 auto 10px auto;
-			text-align:center;
-		}
-*/		.button{
-			display:inline-block;
-			font-weight:500;
-			font-size:14px;
-			line-height:42px;
-			font-family:'Systematic J', Arial, sans-serif;
-			width:auto;
-			white-space:nowrap;
-			height:42px;
-			margin:0px 5px 12px 0;
-			padding:0 22px;
-			text-decoration:none;
-			text-align:center;
-			cursor:pointer;
-			border:0;
-			border-radius:3px;
-			vertical-align:top;
-			text-transform: uppercase;
-			font-weight: bold;
-		}
-		.button span{
-			display:inline;
-			font-family:'Helvetica', Arial, sans-serif;
-			text-decoration:none;
-			font-weight:500;
-			font-style:normal;
-			font-size:16px;
-			line-height:42px;
-			cursor:pointer;
-			border:none;
-		}
-		body,#bodyTable{
+		body{
 			/* page background */
 			background-color: var(--y0);
+			margin: auto;
 		}
 		h1 img{
 			max-width:100%;
@@ -61,35 +27,36 @@
 			vertical-align:bottom;
 		}
 
-/*/		#templateContainer{
-			background-color:none;
+		/*responsive layout*/
+		@media all and (min-width: 960px) {
+			h1{
+		    font-size: 30px;
+		  }
+			.intro {
+				max-width: 60%;
+			}
 		}
-		#mergeRow-0 {
-			font-size:12px;
-			text-align:"center";
+		@media all and (max-width: 959px) and (min-width: 600px) {
+			h1{
+		    font-size: 30px;
+		  }
+			.intro {
+				max-width: 75%;
+			}
+			.container{
+				height: unset;
+			}
 		}
-/*-/		#subscribeFormWelcome {
-			padding-bottom:30px;
-		}*/
-/**//*		#templateBody{
-			/* text background *-/
-			/*background-color:#ffffff;*-/
-		}
-		.floating-box {
-		    display: inline-block;
-		    width: 156px;
-		    height: 100px;
-		    margin: 10px;
-	/*		border: 2px solid black;*-/
-		}
-		.after-box {
-		    border: 3px solid red;
-			}*-/
-		img {
-		    display: block;
-		    margin: 0 auto;
-		    width: 100%;
-		    height: auto;
+		@media all and (max-width: 599px) and (min-width: 50px) {
+			h1{
+		    font-size: 22px;
+		  }
+			.container{
+				height: unset;
+			}
+			.intro {
+				max-width: 85%;
+			}
 		}
 
 /*nouvelle orga - début */
@@ -97,18 +64,35 @@
 .container{
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	max-width: 975px;
 	min-width: 300px;
 	margin: auto;
 	padding: 10px 10px 10px 10px;
 }
+.intro {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.highlight {
+	display: flex;
+  flex-direction: column;
+	margin: 5px 5px 5px 5px;
+	background-color: var(--y3);
+}
 .title {
+	display: flex;
+	justify-content: space-between;
 	margin: auto;
-	text-align: center;
-	background-color: var(--y1);
-	padding: 15px 15px 15px 15px;
-	max-width: 401px;
-	height: 275px;
+	text-align: left;
+	background-color: var(--y3);
+	/*padding: 5px 5px 5px 5px;*/
+	width: 100%;
+	height: 35px;
+	position: fixed;
+	top: 0px;
 }
 .space {
 	margin: auto;
@@ -121,89 +105,90 @@
 	flex-direction: column;
 	padding: 15px 15px 15px 15px;
 	margin: auto;
-	margin-bottom: 60px;
-	text-align: left;
 	background-color: var(--y1);
 }
 .project-space {
 	display: flex;
-	flex-direction: row;
 	flex-flow: wrap;
-	flex-basis: content;
 	justify-content: center;
-	align-content: flex-start;
-	max-width: 770px;/*
-	min-width: 220px;*/
+	max-width: 610px;
 	margin: 10px 5px 5px 5px;
 	background-color: var(--y2);
-	padding: 10px 10px 10px 10px;
+	padding: 7px 14px 7px 14px;
 }
 .project-box {
 	display: flex;
   flex-direction: column;
-  min-width: 200px;
-	max-width: 350px;
-	margin: 5px 5px 5px 5px;
+  min-width: 100%;
+	margin: 7px 0px 7px 0px;
   align-content: center;
 	justify-content: center;
 	background-color: var(--y3);
-	border-style: solid;
-	border-color: var(--y0);
-	border-width: 1px;
 }
 .project-box-a {
   display: flex;
 	flex-direction: column;
   flex-basis: 1;
-	padding: 15px 10px 10px 10px;
+	padding: 15px 15px 10px 15px;
 	text-align: center;
+	background-color: var(--y4);
 }
 .project-box-b {
 	display: flex;
   flex-direction: row;
-  justify-content: center;
+	flex-wrap: wrap;
+  justify-content: left;
 	align-items: center;
-	padding: 10px 10px 10px 10px;
+	padding: 5px 5px 0px 5px;
 }
 .project-button {
 	flex-basis: content;
-	margin: 0px 5px 0px 5px;
-	padding: 5px 5px 5px 5px;
-	background-color: var(--y1)
+	padding: 0px 5px 5px 5px;
+	font-family: 'Exo', sans-serif;
+	font-weight: 100;
+	font-size: 16px;
+	letter-spacing:2px;
+	color:var(--h0);
+	text-transform: uppercase;
+
 }
 .project-button-i {
 	flex-basis: content;
-	margin: 0px 5px 0px 5px;
-	padding: 5px 5px 5px 5px;
+	padding: 0px 5px 5px 5px;
+	font-family: 'Exo', sans-serif;
+	font-weight: 100;
+	font-size: 14px;
+	letter-spacing:2px;
+	color:var(--b);
 }
 .project-button:hover {
 	background-color: var(--h0);
+	color:var(--y3);
+	font-weight: 300;
 }
 .footer {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
-	position: fixed;
-	overflow: auto;
 	width: 100%;
 	background-color: var(--y0);
 	bottom: 0px;
 	z-index: 100;
+	text-align: center;
 }
 .slideshow {
 	background-color: white;
 	max-height: 500px;
 }
 h1{
-	font-size:83px;
-	line-height:87%;
-	text-align: center;
+	/*font-size:32px;*/
+	line-height:120%;
 	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
-	color:var(--b);
+	color:var(--y3);
 	font-family: 'Roboto Slab', serif;
-	font-weight:700;
+	font-weight:500;
 	letter-spacing:4px;
 }
 h2{
@@ -218,13 +203,13 @@ h2{
 	letter-spacing:2px;
 }
 h3{
-	font-size:17px;
+	font-size:20px;
 	line-height:140%;
 	text-align: center;
-	font-weight:400;
-	color:var(--b);
+	font-weight:300;
+	color: var(--b);
 	font-family: 'Roboto Slab', serif;
-	letter-spacing:1px;
+	letter-spacing:1.8px;
 	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
 	text-transform: uppercase;
@@ -233,7 +218,7 @@ h4{
 	line-height:130%;
 	font-family: 'Exo', sans-serif;
 	font-size:16px;
-	color:var(--b);
+	color:var(--y3);
 	font-weight:400;
 /*	-webkit-text-size-adjust:none;*/
 	letter-spacing:2px;
@@ -245,35 +230,43 @@ p{
 	font-family: 'Exo', sans-serif;
 	font-size:16px;
 	color:var(--b);
-	font-weight:100;
-/*	-webkit-text-size-adjust:none;*/
+	font-weight:400;
 	letter-spacing:2px;
 	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
 }
+p.small{
+	font-weight:200;
+	font-size:14px;
+	font-style: italic;
+}
+/*liens*/
 a {
-	font-family: 'Exo', sans-serif;
-	font-weight: 100;
-	font-size: 16px;
-	letter-spacing:2px;
-	color:var(--b);
 	text-decoration: none;
 }
 a:link,a:active,a:visited,a{
-	color:var(--b);
+	color:var(--h0);
 }
 a:hover{
 	color: var(--y3);
 	font-weight: 500;
 }
+.button{
+	background-color: unset;
+	border: none;
+	height: 100%;
+}
 .button:link,.button:active,.button:visited,.button,.button span{
-	background-color:#ffff00 !important;
-	color:#26262626 !important;
+	background-color: unset;
+	border: none;
 }
 .button:hover{
-	background-color:#262626 !important;
+	background-color: unset;
+	border: none;
+	background-color: var(--h0);
 	color:#ffffff !important;
 }
+
 /*page pédagogique*/
 textarea {
 	background-color: unset;
@@ -333,40 +326,3 @@ textarea {
 	text-align: left;
 	background-color: var(--y1);
 }
-
-/*img {
-    display: block;
-    margin: 0 auto;
-    max-height: 500px;
-    height: auto;
-}
-@media (max-width: 260px){
-		body{
-			width:100%;
-			-webkit-font-smoothing:antialiased;
-			min-width:200px !important;
-		}
-	}
-	@media (max-width: 260px){
-		.wrapper,.poweredWrapper{
-			width:auto !important;
-			max-width:600px !important;
-			padding:0 10px;
-		}
-	}
-	@media (max-width: 260px){
-		.video-container {
-		    position: relative;
-		    padding-bottom: 56.25%;
-		    padding-top: 30px; height: 0; overflow: hidden;
-		}
-		.video-container iframe,
-		.video-container object,
-		.video-container embed {
-		    position: absolute;
-		    top: 0;
-		    left: 0;
-		    width: 100%;
-		    height: 100%;
-		}
-	}*/
