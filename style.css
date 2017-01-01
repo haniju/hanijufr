@@ -20,6 +20,10 @@
 			/* page background */
 			background-color: var(--y0);
 			margin: auto;
+			min-height: 100vh;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
 		}
 		h1 img{
 			max-width:100%;
@@ -174,7 +178,6 @@
 	width: 100%;
 	background-color: var(--y0);
 	bottom: 0px;
-	z-index: 100;
 	text-align: center;
 }
 .slideshow {
