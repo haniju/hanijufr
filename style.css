@@ -77,12 +77,21 @@
 			.slideshow-container img {
 				max-height: 80vw !important;
 			}
+			img.img-portfolio {
+				width:90% !important;
+			}
 		}
 		::selection {
 			background-color: var(--h0);
 		}
 		::-moz-selection {
 			background: var(--h0);
+		}
+		img.img-portfolio {
+			width:35%;
+			margin:auto;
+			margin-top:15px;
+			z-index:10;
 		}
 		h1{
 			line-height:120%;
@@ -203,18 +212,16 @@
 
 /*global config*/
 .logo {
-	font-family: 'Contrail One', cursive;
-	font-size: 45px;
+	font-size: 25px;
 	line-height: 47px;
 	letter-spacing: 2px;
 	color: white;
 }
 .container{
-	display: flex;
+	display: block;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 100vw;
 	margin: auto;
 }
 .intro {
@@ -256,7 +263,7 @@
 	display: flex;
 	flex-flow: wrap;
 	justify-content: center;
-	width: 100vw;
+	width: 100%;
 }
 .project-box {
 	display: flex;

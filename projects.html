@@ -69,7 +69,7 @@
 
         <div class="project-box">
           <div class="project-box-a">
-            <img src="images/logo_blockfest.svg" style="width:290px; margin:auto; margin-top:15px; z-index:10;">
+            <img src="images/logo_blockfest.svg" class="img-portfolio">
       			<p><br>"Le festival pédagogique des blockchains, pour s'approprier une technologie émergente à 360°"</p>
             <p class="small"><br>Une série d'évènements
             pour découvrir la technologie blockchain et les enjeux de sa diffusion.<br><br></p>
@@ -91,185 +91,23 @@
           </div>
 
           <div class="project-box-b">
-						<button class="project-button" id="project-button-1" onclick="modal()">Visuels</button>
-						<div id="project-modal-1" class="project-modal">
-							<div class="modal-content">
-								<span class="close">&times;</span>
-								<div class="slideshow-container">
-									<div class="mySlides">
-								  	<img src="images/blockfest101.jpg">
-										<div class="caption">
-											<div class="numbertext">
-												<p class="dark">
-													1 / 6
-												</p>
-											</div>
-											<div class="text">
-												<p class="dark">
-													Le Blockfest 1.0 - École 42 - Juin 2016 - Jason Rodier
-												</p>
-											</div>
-										</div>
-									</div>
-									<div class="mySlides">
-									  <img src="images/blockfest102.jpg">
-										<div class="caption">
-											<div class="numbertext">
-												<p class="dark">
-													2 / 6
-												</p>
-											</div>
-											<div class="text">
-												<p class="dark">
-													Le Blockfest 1.0 - École 42 - Juin 2016 - Jason Rodier
-												</p>
-											</div>
-										</div>
-									</div>
-									<div class="mySlides">
-									  <img src="images/blockfest103.jpg">
-										<div class="caption">
-											<div class="numbertext">
-												<p class="dark">
-													3 / 6
-												</p>
-											</div>
-									  	<div class="text">
-												<p class="dark">
-													Le Blockfest 1.0 - École 42 - Juin 2016 - Jason Rodier
-												</p>
-											</div>
-										</div>
-									</div>
-									<div class="mySlides">
-									  <img src="images/blockfest104.png">
-										<div class="caption">
-											<div class="numbertext">
-												<p class="dark">
-													4 / 6
-												</p>
-											</div>
-									  	<div class="text">
-												<p class="dark">
-													Le Blockfest 1.1 - Les ateliers du vent - Janvier 2017
-												</p>
-											</div>
-										</div>
-									</div>
-									<div class="mySlides">
-									  <img src="images/blockfest105.png">
-										<div class="caption">
-											<div class="numbertext">
-												<p class="dark">
-													5 / 6
-												</p>
-											</div>
-									  	<div class="text">
-												<p class="dark">
-													Le Blockfest 1.1 - Les ateliers du vent - Janvier 2017
-												</p>
-											</div>
-										</div>
-									</div>
-									<div class="mySlides">
-									  <img src="images/blockfest106.jpg">
-										<div class="caption">
-											<div class="numbertext">
-												<p class="dark">
-													6 / 6
-												</p>
-											</div>
-									  	<div class="text">
-												<p class="dark">
-													Le Blockfest 1.1 - Les ateliers du vent - Janvier 2017
-												</p>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="caption">
-									<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-									<div class="dots" style="text-align:center">
-									  <span class="dot" onclick="currentSlide(1)"></span>
-									  <span class="dot" onclick="currentSlide(2)"></span>
-									  <span class="dot" onclick="currentSlide(3)"></span>
-										<span class="dot" onclick="currentSlide(4)"></span>
-										<span class="dot" onclick="currentSlide(5)"></span>
-										<span class="dot" onclick="currentSlide(6)"></span>
-									</div>
-									<a class="next" onclick="plusSlides(1)">&#10095;</a>
-								</div>
-							</div>
-							<script>
-							var slideIndex = 1;
-							showSlides(slideIndex);
-							function plusSlides(n) {
-								showSlides(slideIndex += n);
-							}
-							function currentSlide(n) {
-								showSlides(slideIndex = n);
-							}
-							function showSlides(n) {
-								var i;
-								var slides = document.getElementsByClassName("mySlides");
-								var dots = document.getElementsByClassName("dot");
-								if (n > slides.length) {slideIndex = 1}
-								if (n < 1) {slideIndex = slides.length}
-								for (i = 0; i < slides.length; i++) {
-										slides[i].style.display = "none";
-								}
-								for (i = 0; i < dots.length; i++) {
-										dots[i].className = dots[i].className.replace(" active", "");
-								}
-								slides[slideIndex-1].style.display = "flex";
-								dots[slideIndex-1].className += " active";
-							}
-							</script>
-						</div>
 
             <a href="http://blockfest.fr/" target="_blank">
               <div class="project-button">
               Site web
               </div>
             </a>
-            <a href="http://base.blockfest.fr/" target="_blank">
+            <!--a href="http://base.blockfest.fr/" target="_blank">
               <div class="project-button">
               Plateforme documentaire
               </div>
-            </a>
+            </a-->
           </div>
         </div>
 
         <div class="project-box">
           <div class="project-box-a">
-            <img src="images/logo_openvhub.svg" style="width:300px; margin:auto; z-index:10;">
-            <p><br>"Rendre visible un projet et son avancement, pour tous ses contributeurs"
-              <br><br></p>
-              <p class="small">Application de management visuel de
-							projet open source.
-              L'affichage est piloté via une interface d'administration
-              dediée.<br><br></p>
-          </div>
-
-          <div class="project-box-b">
-            <div class="project-button-i">
-            2014-2016
-            </div>
-            <div class="project-button-i">
-              Co-fondatrice
-            </div>
-            <div class="project-button-i">
-              Design UX & UI
-            </div>
-            <div class="project-button-i">
-              Suivi de production
-            </div>
-          </div>
-        </div>
-
-        <div class="project-box">
-          <div class="project-box-a">
-            <img src="images/logo_adf.svg" style="width:140px; margin:auto; z-index:10;">
+            <img src="images/logo_adf.svg" class="img-portfolio" style="height:80px;">
             <p><br>"Dissémination de jouets hybrido-interactifs pour
             manifestations festives"<br><br></p>
             <p class="small">
@@ -311,7 +149,7 @@
 
 				<div class="project-box">
           <div class="project-box-a">
-            <img src="images/logo_jerry.svg" style="width:300px; margin:auto; z-index:10;">
+            <img src="images/logo_jerry.svg" class="img-portfolio">
             <p><br>"Dissémination de jouets hybrido-interactifs pour
             manifestations festives"<br><br></p>
             <p class="small">
@@ -360,7 +198,7 @@
 
         <div class="project-box">
           <div class="project-box-a">
-            <img src="images/logo_cemgm.svg" style="width:230px; margin:auto; margin-top:15px; z-index:10;">
+            <img src="images/logo_cemgm.svg" class="img-portfolio">
 	          <p><br>"Co-construire une borne interactive à partir de récup informatique,
             pour/avec l'ensemble des usagers de la Bibliothèque Grands Moulins"<br><br></p>
             <p class="small"> 7 Ateliers organisés à l'occasion du Festival des Idées<br><br></p>
@@ -394,6 +232,33 @@
               facebook
               </div>
             </a>
+          </div>
+        </div>
+
+        <div class="project-box">
+          <div class="project-box-a">
+            <img src="images/logo_openvhub.svg" class="img-portfolio">
+            <p><br>"Rendre visible un projet et son avancement, pour tous ses contributeurs"
+              <br><br></p>
+              <p class="small">Application de management visuel de
+							projet open source.
+              L'affichage est piloté via une interface d'administration
+              dediée.<br><br></p>
+          </div>
+
+          <div class="project-box-b">
+            <div class="project-button-i">
+            2014-2016
+            </div>
+            <div class="project-button-i">
+              Co-fondatrice
+            </div>
+            <div class="project-button-i">
+              Design UX & UI
+            </div>
+            <div class="project-button-i">
+              Suivi de production
+            </div>
           </div>
         </div>
 
@@ -435,8 +300,8 @@
         <div class="project-box">
           <div class="project-box-a">
             <div class="logo">
-							HANIJU<br>
-							DESIGN
+							<h1>HANIJU<br>
+							DESIGN</h1>
 						</div>
             <p class="small"><br>Portfolio .pdf pour 2013-2014.<br><br></p>
           </div>
