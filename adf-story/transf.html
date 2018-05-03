@@ -11,25 +11,8 @@
 
   <div class="content fixed">
 
-
-      <div class="canvas" style="width:100%; height:100%;">
-        <img id="tex" src="">
-      </div>
-
-      <div class="canvas">
-        <img class="chim" style="height:26vh" id="oeuil" src="">
-      </div>
-
-      <div class="canvas">
-        <img class="chim" style="height:20vh; margin-left:5px;" id="nez" src="">
-      </div>
-
-      <div class="canvas">
-        <img class="chim" style="height:24vh; margin-left:30px;" id="bou" src="">
-      </div>
-
-      <div class="canvas">
-        <img class="chim" style="height:30vh" id="prot" src="">
+      <div class="canvas" id="canvas">
+        <img src="images/chimere/oeuil1.gif" id="oeuil" class="chim" style="height:26vh">
       </div>
 
   </div>
@@ -97,13 +80,13 @@
   </div>
 </div>
 <script>
-function drag() {
-  document.getElementById("oeuil").onmousedown = function(e) {
+
+  document.getElementById("canvas").onmousedown = function(e) {
   		this.prevX = e.clientX;
   		this.prevY = e.clientY;
   		this.mouseDown = true;
   	}
-  	document.getElementById("oeuil").onmousemove = function(e) {
+  	document.getElementById("canvas").onmousemove = function(e) {
   		if(this.mouseDown) {
   			this.style.left = (Number(this.style.left.substring(0, this.style.left.length-2)) + (e.clientX - this.prevX)) + "px";
   			this.style.top = (Number(this.style.top.substring(0, this.style.top.length-2)) + (e.clientY - this.prevY)) + "px";
@@ -111,10 +94,10 @@ function drag() {
   		this.prevX = e.clientX;
   		this.prevY = e.clientY;
   	}
-  	document.getElementById("oeuil").onmouseup = function() {
+  	document.getElementById("canvas").onmouseup = function() {
   		this.mouseDown = false;
   	}
-  }
+
 </script>
 
 <script>

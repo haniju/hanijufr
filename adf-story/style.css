@@ -44,7 +44,7 @@ img {
   margin-right: 150px;
   height: 100%;
 }
-img {
+img, .canvas {
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
@@ -86,11 +86,11 @@ iframe {
   margin-top: 20px;
 }
 .content {
-  box-sizing: border-box;
+  box-sizing: border-box;/*
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  align-items: center;
+  align-items: center;*/
   height: 100%;
   margin: auto;
   padding-bottom: 50px;
@@ -120,9 +120,10 @@ iframe {
   position: relative;
 }
 .canvas {
-  height:20vh;
-  width: 20vh;
-  position:absolute;/*
+  height: ;
+  width: ;
+  position:absolute;
+/*
   display:flex;
   justify-content: flex-start;
   height:100%;
