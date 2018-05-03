@@ -2,6 +2,7 @@
 <head>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/draggabilly@2/dist/draggabilly.pkgd.min.js"></script>
   <meta charset="utf-8"/>
 </head>
 
@@ -10,30 +11,27 @@
 
   <div class="content fixed">
 
-    <div class="demi">
 
       <div class="canvas" style="width:100%; height:100%;">
         <img id="tex" src="">
       </div>
 
-      <div class="canvas" style="justify-content:flex-end; padding-top:40px; width:60%">
-        <div class="dragselect">
-          <img class="chim" style="height:26vh" id="oeuil" src="">
-        </div>
+      <div class="canvas">
+        <img class="chim" style="height:26vh" id="oeuil" src="">
       </div>
 
-      <div class="canvas" style="align-items:center; justify-content:flex-start;">
+      <div class="canvas">
         <img class="chim" style="height:20vh; margin-left:5px;" id="nez" src="">
       </div>
 
-      <div class="canvas" style="align-items:flex-end; justify-content:flex-start; bottom:80px;">
+      <div class="canvas">
         <img class="chim" style="height:24vh; margin-left:30px;" id="bou" src="">
       </div>
 
-      <div class="canvas" style="align-items:flex-end; justify-content:flex-end; bottom:70px;">
+      <div class="canvas">
         <img class="chim" style="height:30vh" id="prot" src="">
       </div>
-    </div>
+
   </div>
 </div>
 
@@ -49,7 +47,7 @@
     </select>
 
     <h2>Oeuil</h2>
-    <select id="dropOeuil">
+    <select id="dropOeuil" onchange="drag()">
       <option value="">Aucun</option>
       <option value="images/chimere/oeuil1.gif">1</option>
       <option value="images/chimere/oeuil2.gif">2</option>
@@ -99,6 +97,27 @@
   </div>
 </div>
 <script>
+function drag() {
+  document.getElementById("oeuil").onmousedown = function(e) {
+  		this.prevX = e.clientX;
+  		this.prevY = e.clientY;
+  		this.mouseDown = true;
+  	}
+  	document.getElementById("oeuil").onmousemove = function(e) {
+  		if(this.mouseDown) {
+  			this.style.left = (Number(this.style.left.substring(0, this.style.left.length-2)) + (e.clientX - this.prevX)) + "px";
+  			this.style.top = (Number(this.style.top.substring(0, this.style.top.length-2)) + (e.clientY - this.prevY)) + "px";
+  		}
+  		this.prevX = e.clientX;
+  		this.prevY = e.clientY;
+  	}
+  	document.getElementById("oeuil").onmouseup = function() {
+  		this.mouseDown = false;
+  	}
+  }
+</script>
+
+<script>
 //http://jsfiddle.net/treyh/xf2pq/
 function setTex() {
     var img = document.getElementById("tex");
@@ -106,6 +125,7 @@ function setTex() {
     return false;
 }
 document.getElementById("dropTex").onchange = setTex;
+
 
 function setOeuil() {
     var img = document.getElementById("oeuil");

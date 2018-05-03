@@ -120,11 +120,13 @@ iframe {
   position: relative;
 }
 .canvas {
-  position:absolute;
+  height:20vh;
+  width: 20vh;
+  position:absolute;/*
   display:flex;
   justify-content: flex-start;
   height:100%;
-  z-index:-10;
+  z-index:-10;*/
 }
 
 #opt1, #opt2, #opt3, #opt4 {
