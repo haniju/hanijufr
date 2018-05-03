@@ -2,7 +2,6 @@
 <head>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="style.css">
-  <script src="https://unpkg.com/draggabilly@2/dist/draggabilly.pkgd.min.js"></script>
   <meta charset="utf-8"/>
 </head>
 
@@ -16,19 +15,19 @@
         <img id="tex" src="">
       </div>
 
-      <div class="canvas">
+      <div class="canvas" id="dragOeuil">
         <img class="chim" style="height:26vh" id="oeuil" src="">
       </div>
 
-      <div class="canvas">
+      <div class="canvas" id="dragNez">
         <img class="chim" style="height:20vh; margin-left:5px;" id="nez" src="">
       </div>
 
-      <div class="canvas">
+      <div class="canvas" id="dragBou">
         <img class="chim" style="height:24vh; margin-left:30px;" id="bou" src="">
       </div>
 
-      <div class="canvas">
+      <div class="canvas" id="dragProt">
         <img class="chim" style="height:30vh" id="prot" src="">
       </div>
 
@@ -47,7 +46,7 @@
     </select>
 
     <h2>Oeuil</h2>
-    <select id="dropOeuil" onchange="drag()">
+    <select id="dropOeuil">
       <option value="">Aucun</option>
       <option value="images/chimere/oeuil1.gif">1</option>
       <option value="images/chimere/oeuil2.gif">2</option>
@@ -77,6 +76,7 @@
       <option value="images/chimere/prot3.gif">3</option>
     </select>
   </div>
+
   <div class="legend-box">
     <h2>Le Cadavre Exquis</h2>
   </div>
@@ -96,65 +96,7 @@
     <a href="cadavre.html"><h2>Le Cadavre Exquis</h2></a>
   </div>
 </div>
-<script>
-function drag() {
-  document.getElementById("oeuil").onmousedown = function(e) {
-  		this.prevX = e.clientX;
-  		this.prevY = e.clientY;
-  		this.mouseDown = true;
-  	}
-  	document.getElementById("oeuil").onmousemove = function(e) {
-  		if(this.mouseDown) {
-  			this.style.left = (Number(this.style.left.substring(0, this.style.left.length-2)) + (e.clientX - this.prevX)) + "px";
-  			this.style.top = (Number(this.style.top.substring(0, this.style.top.length-2)) + (e.clientY - this.prevY)) + "px";
-  		}
-  		this.prevX = e.clientX;
-  		this.prevY = e.clientY;
-  	}
-  	document.getElementById("oeuil").onmouseup = function() {
-  		this.mouseDown = false;
-  	}
-  }
-</script>
-
-<script>
-//http://jsfiddle.net/treyh/xf2pq/
-function setTex() {
-    var img = document.getElementById("tex");
-    img.src = this.value;
-    return false;
-}
-document.getElementById("dropTex").onchange = setTex;
-
-
-function setOeuil() {
-    var img = document.getElementById("oeuil");
-    img.src = this.value;
-    return false;
-}
-document.getElementById("dropOeuil").onchange = setOeuil;
-
-function setNez() {
-    var img = document.getElementById("nez");
-    img.src = this.value;
-    return false;
-}
-document.getElementById("dropNez").onchange = setNez;
-
-function setBou() {
-    var img = document.getElementById("bou");
-    img.src = this.value;
-    return false;
-}
-document.getElementById("dropBou").onchange = setBou;
-
-function setProt() {
-    var img = document.getElementById("prot");
-    img.src = this.value;
-    return false;
-}
-document.getElementById("dropProt").onchange = setProt;
-
-</script>
+<script src="js/dragging.js"></script>
+<script src="js/select.js"></script>
 </body>
 </html>

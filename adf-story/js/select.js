@@ -1,34 +1,36 @@
-function showopt() {
-  var selectopt = document.getElementById("dropdown").selectedIndex;
-
-  // changer le style du gif de l'option selectionnée
-  document.getElementById(selectopt).style.visibility = "visible";
-  document.getElementById("opt").style.visibility = "hidden";
+//http://jsfiddle.net/treyh/xf2pq/
+function setTex() {
+    var img = document.getElementById("tex");
+    img.src = this.value;
+    return false;
 }
-
-// Isoler l'option selectionnée
-function getSelectedOption(sel) {
-    var selectopt;
-    for ( var i = 0, len = sel.options.length; i < len; i++ ) {
-        opt = sel.options[i];
-        if ( opt.selected === true ) {
-            break;
-        }
-    }
-    return selectopt;
-}
-// transporter l'option selectionnée
-var opt = getSelectedOption(sel);
-}
+document.getElementById("dropTex").onchange = setTex;
 
 
-function getSelectedOption(sel) {
-    var opt;
-    for ( var i = 0, len = sel.options.length; i < len; i++ ) {
-        opt = sel.options[i];
-        if ( opt.selected === true ) {
-            break;
-        }
-    }
-    return opt;
+function setOeuil() {
+    var img = document.getElementById("oeuil");
+    img.src = this.value;
+    return false;
 }
+document.getElementById("dropOeuil").onchange = setOeuil;
+
+function setNez() {
+    var img = document.getElementById("nez");
+    img.src = this.value;
+    return false;
+}
+document.getElementById("dropNez").onchange = setNez;
+
+function setBou() {
+    var img = document.getElementById("bou");
+    img.src = this.value;
+    return false;
+}
+document.getElementById("dropBou").onchange = setBou;
+
+function setProt() {
+    var img = document.getElementById("prot");
+    img.src = this.value;
+    return false;
+}
+document.getElementById("dropProt").onchange = setProt;
