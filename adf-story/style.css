@@ -54,6 +54,7 @@ img {
 img.chim {
   pointer-events: none;
 }
+
 iframe {
   height: 100%;
   width: 100%;
@@ -126,13 +127,12 @@ iframe {
   z-index:-10;
 }
 
-#oeuil1, #oeuil2, #oeuil3, #oeuil4, #protu1, #protu2, #protu3, #ned1, #ned2, #bou1, #bou2 {
-  display: none;
+#opt1, #opt2, #opt3, #opt4 {
+  visibility: hidden;
 }
-#textu1, #textu2 {
+#tex {
   z-index: -11;
   position: absolute;
-  display: none;
 }
 
 .legend-box {
@@ -188,7 +188,7 @@ iframe {
   color: var(--white);
 }
 
-.buttact {
+/*.buttact {
     background-color: var(--highlight1);
     color: var(--white);
 }
@@ -203,3 +203,4 @@ iframe {
 	cursor: move;
   z-index:10;
 }
+*/
