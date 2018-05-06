@@ -52,7 +52,8 @@ img {
   user-select: none;
 }
 img.chim {
-  pointer-events: none;
+  /*pointer-events: none;*/
+  z-index: 15;
 }
 
 iframe {
@@ -125,10 +126,17 @@ iframe {
   position:absolute;/*
   display:flex;
   justify-content: flex-start;
-  height:100%;
-  z-index:-10;*/
+  height:100%;*/
+  z-index:10;
 }
-
+.draggable {
+  /*pointer-events: fill;*/
+  padding: 15px;
+  background-color: wheat;
+  position:absolute;
+  z-index:10;
+  cursor: pointer;
+}
 #opt1, #opt2, #opt3, #opt4 {
   visibility: hidden;
 }
