@@ -28,6 +28,21 @@ h2 {
     margin: 7px;
     text-transform: uppercase;
 }
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height:17px;
+  letter-spacing: 1.5px;
+  color: var(--grey1);
+  font-weight: 500;
+  padding: 10px;
+}
+p.instructions {
+  position: absolute;
+  left: 30px;
+  bottom: 50px;
+  background-color: white;
+}
 a:link {
   color: unset;
   text-decoration: none;
@@ -97,6 +112,7 @@ iframe {
 }
 .fixed {
   width: 100%;
+  position: relative;
 }
 .fixed img {
   margin: 0px;
@@ -120,22 +136,31 @@ iframe {
   position: relative;
 }
 .canvas {
-/*  height:20vh;
-  width: 20vh;*/
-  position:absolute;/*
-  display:flex;
-  justify-content: flex-start;
-  height:100%;
-  z-index:-10;*/
-}
-
-#opt1, #opt2, #opt3, #opt4 {
+  position:absolute;
   visibility: hidden;
+}
+.draggable:hover .canvas {
+  visibility: visible;
+  }
+.draggable:hover {
+  background-image: radial-gradient(
+      circle,
+      rgba(255, 216, 0, 0.3),
+      rgba(255, 216, 0, 0),
+      rgba(255, 216, 0, 0)
+    );
+  padding: 10px;
+}
+/*#dragNez {
+  top: 160px;
+}
+#dragBou {
+  top: 220px;
 }
 #tex {
   z-index: -11;
   position: absolute;
-}
+}*/
 
 .legend-box {
   position: absolute;

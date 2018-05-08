@@ -1,7 +1,6 @@
 <html>
 <head>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="style.css">
   <meta charset="utf-8"/>
 </head>
 
@@ -11,42 +10,45 @@
   <div class="content fixed">
 
 
-      <div class="canvas" style="width:100%; height:100%;">
+      <div class="canvas" id="texture" style="width:100%; height:100%;">
         <img id="tex" src="images/chimere/foo.png">
       </div>
 
-      <div class="canvas" id="dragOeuil">
+      <div class="canvas draggable" id="dragOeuil">
         <img class="chim" style="height:26vh" id="oeuil" src="images/chimere/foo.png">
       </div>
 
-      <div class="canvas" id="dragNez">
+      <div class="canvas draggable" id="dragNez">
         <img class="chim" style="height:20vh; margin-left:5px;" id="nez" src="images/chimere/foo.png">
       </div>
 
-      <div class="canvas" id="dragBou">
+      <div class="canvas draggable" id="dragBou">
         <img class="chim" style="height:24vh; margin-left:30px;" id="bou" src="images/chimere/foo.png">
       </div>
 
-      <div class="canvas" id="dragProt">
-        <img class="chim" style="height:30vh" id="prot" src="images/chimere/foo.png">
+      <div class="canvas draggable" id="dragProt">
+        <img class="chim" style="height:39vh" id="prot" src="images/chimere/foo.png">
       </div>
 
+      <p class="instructions">Selectionne-les éléments à afficher dans les dropdowns, <br>et déplace-les LENTEMENT sur l'écran <br> ENJOY !!!</p>
   </div>
 </div>
 
 
 <div class="footer-1">
-  <div class="footer-2">
+  <div class="footer-button">
+    <a href="chimere.html"><h2>BACK</h2></a>
+  </div>
 
     <h2>Texture</h2>
-    <select id="dropTex">
+    <select id="dropTex" onclick="javascript: showDivT(this); ">
       <option value="images/chimere/foo.png">Aucun</option>
       <option value="images/chimere/tex1.gif">1</option>
       <option value="images/chimere/tex2.png">2</option>
     </select>
 
-    <h2>Oeuil</h2>
-    <select id="dropOeuil">
+    <h2>Oeil</h2>
+    <select id="dropOeuil" onclick="javascript: showDivO(this); ">
       <option value="images/chimere/foo.png">Aucun</option>
       <option value="images/chimere/oeuil1.gif">1</option>
       <option value="images/chimere/oeuil2.gif">2</option>
@@ -55,46 +57,29 @@
     </select>
 
     <h2>Nez</h2>
-    <select id="dropNez">
+    <select id="dropNez" onclick="javascript: showDivN(this); ">
       <option value="images/chimere/foo.png">Aucun</option>
       <option value="images/chimere/nez1.gif">1</option>
       <option value="images/chimere/nez2.gif">2</option>
     </select>
 
     <h2>Bouche</h2>
-    <select id="dropBou">
+    <select id="dropBou" onclick="javascript: showDivB(this); ">
       <option value="images/chimere/foo.png">Aucun</option>
       <option value="images/chimere/bou1.gif">1</option>
       <option value="images/chimere/bou2.gif">2</option>
     </select>
 
     <h2>Protubérance</h2>
-    <select id="dropProt">
+    <select id="dropProt" onclick="javascript: showDivP(this); ">
       <option value="images/chimere/foo.png">Aucun</option>
       <option value="images/chimere/prot1.gif">1</option>
       <option value="images/chimere/prot2.gif">2</option>
       <option value="images/chimere/prot3.gif">3</option>
+      <option value="images/chimere/prot4.gif">4</option>
+      <option value="images/chimere/prot5.gif">5</option>
     </select>
-  </div>
 
-  <div class="legend-box">
-    <h2>Le Cadavre Exquis</h2>
-  </div>
-  <div class="footer-button">
-    <a href="http://lesanimauxdufutur.net"><h2>les ADF</h2></a>
-  </div>
-  <div class="footer-button">
-    <a href="mixeur.html"><h2>Le Mixeur de Sons</h2></a>
-  </div>
-  <div class="footer-button">
-    <a href="chimere.html"><h2>La Chimère</h2></a>
-  </div>
-  <div class="footer-button">
-    <a href="stopmo.html"><h2>Le Stop-Motion</h2></a>
-  </div>
-  <div class="footer-button">
-    <a href="cadavre.html"><h2>Le Cadavre Exquis</h2></a>
-  </div>
 </div>
 <script src="js/dragging.js"></script>
 <script src="js/select.js"></script>
