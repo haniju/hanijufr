@@ -9,76 +9,113 @@
 
   <div class="content fixed">
 
+    <div class="aide">
+      <h2>?</h2>
+      <p class="instructions">\o/ Bienvenue sur la Chimère \o/<br>
+        1 - Selectionne-les éléments que tu veux afficher depuis les dropdowns, <br>
+        2 - Et déplace-les LENTEMENT sur l'écran <br>
+        3 - ENJOY !!!</p>
+    </div>
+    <div class="canvas" id="texture" style="width:100%; height:100%;">
+      <img id="tex" src="images/chimere/foo.png">
+    </div>
 
-      <div class="canvas" id="texture" style="width:100%; height:100%;">
-        <img id="tex" src="images/chimere/foo.png">
-      </div>
+    <div class="canvas draggable" id="dragOeuil">
+      <img class="chim" style="height:26vh" id="oeuil" src="images/chimere/foo.png">
+    </div>
+    <div class="canvas draggable" id="dragOeuil2">
+      <img class="chim mirror" style="height:26vh" id="oeuil2" src="images/chimere/foo.png">
+    </div>
 
-      <div class="canvas draggable" id="dragOeuil">
-        <img class="chim" style="height:26vh" id="oeuil" src="images/chimere/foo.png">
-      </div>
+    <div class="canvas draggable" id="dragNez">
+      <img class="chim" style="height:20vh; margin-left:5px;" id="nez" src="images/chimere/foo.png">
+    </div>
 
-      <div class="canvas draggable" id="dragNez">
-        <img class="chim" style="height:20vh; margin-left:5px;" id="nez" src="images/chimere/foo.png">
-      </div>
+    <div class="canvas draggable" id="dragBou">
+      <img class="chim" style="height:24vh; margin-left:30px;" id="bou" src="images/chimere/foo.png">
+    </div>
 
-      <div class="canvas draggable" id="dragBou">
-        <img class="chim" style="height:24vh; margin-left:30px;" id="bou" src="images/chimere/foo.png">
-      </div>
-
-      <div class="canvas draggable" id="dragProt">
-        <img class="chim" style="height:39vh" id="prot" src="images/chimere/foo.png">
-      </div>
-
-      <p class="instructions">Selectionne-les éléments à afficher dans les dropdowns, <br>et déplace-les LENTEMENT sur l'écran <br> ENJOY !!!</p>
+    <div class="canvas draggable" id="dragProt">
+      <img class="chim" style="height:39vh" id="prot" src="images/chimere/foo.png">
+    </div>
+    <div class="canvas draggable" id="dragProt2">
+      <img class="chim mirror" style="height:39vh" id="prot2" src="images/chimere/foo.png">
+    </div>
   </div>
 </div>
 
 
-<div class="footer-1">
+<div class="footer-1 chimere">
   <div class="footer-button">
     <a href="chimere.html"><h2>BACK</h2></a>
   </div>
 
+  <div class="footer-div">
     <h2>Texture</h2>
     <select id="dropTex" onclick="javascript: showDivT(this); ">
-      <option value="images/chimere/foo.png">Aucun</option>
-      <option value="images/chimere/tex1.gif">1</option>
-      <option value="images/chimere/tex2.png">2</option>
+      <option value="images/chimere/foo.png"><p>Aucun</p></option>
+      <option value="images/chimere/tex1.gif"><p>1</p></option>
+      <option value="images/chimere/tex2.png"><p>2</p></option>
     </select>
+  </div>
 
-    <h2>Oeil</h2>
+  <div class="footer-div">
+    <h2>Les Yeux</h2>
+    <select id="dropOeuil2" onclick="javascript: showDivO2(this); ">
+      <option value="images/chimere/foo.png" disabled selected><p>Gauche</p></option>
+      <option value="images/chimere/oeuil1.gif"><p>Oeuil 1</p></option>
+      <option value="images/chimere/oeuil2.gif"><p>Oeuil 2</p></option>
+      <option value="images/chimere/oeuil3.gif"><p>Oeuil 3</p></option>
+      <option value="images/chimere/oeuil4.gif"><p>Oeuil 4</p></option>
+      <option value="images/chimere/foo.png"><p>Rien</p></option>
+    </select>
     <select id="dropOeuil" onclick="javascript: showDivO(this); ">
-      <option value="images/chimere/foo.png">Aucun</option>
-      <option value="images/chimere/oeuil1.gif">1</option>
-      <option value="images/chimere/oeuil2.gif">2</option>
-      <option value="images/chimere/oeuil3.gif">3</option>
-      <option value="images/chimere/oeuil4.gif">4</option>
+      <option value="images/chimere/foo.png" disabled selected><p>Droite</p></option>
+      <option value="images/chimere/oeuil1.gif"><p>Oeuil 1</p></option>
+      <option value="images/chimere/oeuil2.gif"><p>Oeuil 2</p></option>
+      <option value="images/chimere/oeuil3.gif"><p>Oeuil 3</p></option>
+      <option value="images/chimere/oeuil4.gif"><p>Oeuil 4</p></option>
+      <option value="images/chimere/foo.png"><p>Rien</p></option>
     </select>
+  </div>
 
-    <h2>Nez</h2>
+  <div class="footer-div">
+    <h2>Le Nez</h2>
     <select id="dropNez" onclick="javascript: showDivN(this); ">
-      <option value="images/chimere/foo.png">Aucun</option>
-      <option value="images/chimere/nez1.gif">1</option>
-      <option value="images/chimere/nez2.gif">2</option>
+      <option value="images/chimere/foo.png"><p>Aucun</p></option>
+      <option value="images/chimere/nez1.gif"><p>1</p></option>
+      <option value="images/chimere/nez2.gif"><p>2</p></option>
     </select>
+  </div>
 
-    <h2>Bouche</h2>
+  <div class="footer-div">
+    <h2>La Bouche</h2>
     <select id="dropBou" onclick="javascript: showDivB(this); ">
-      <option value="images/chimere/foo.png">Aucun</option>
-      <option value="images/chimere/bou1.gif">1</option>
-      <option value="images/chimere/bou2.gif">2</option>
+      <option value="images/chimere/bou1.gif"><p>1</p></option>
+      <option value="images/chimere/bou2.gif"><p>2</p></option>
+      <option value="images/chimere/foo.png"><p>Aucun</p></option>
     </select>
+  </div>
 
-    <h2>Protubérance</h2>
+  <div class="footer-div">
+    <h2>Les Protubérances</h2>
     <select id="dropProt" onclick="javascript: showDivP(this); ">
-      <option value="images/chimere/foo.png">Aucun</option>
-      <option value="images/chimere/prot1.gif">1</option>
-      <option value="images/chimere/prot2.gif">2</option>
-      <option value="images/chimere/prot3.gif">3</option>
-      <option value="images/chimere/prot4.gif">4</option>
-      <option value="images/chimere/prot5.gif">5</option>
+      <option value="images/chimere/foo.png"><p>Aucun</p></option>
+      <option value="images/chimere/prot1.gif"><p>1</p></option>
+      <option value="images/chimere/prot2.gif"><p>2</p></option>
+      <option value="images/chimere/prot3.gif"><p>3</p></option>
+      <option value="images/chimere/prot4.gif"><p>4</p></option>
+      <option value="images/chimere/prot5.gif"><p>5</p></option>
     </select>
+    <select id="dropProt2" onclick="javascript: showDivP2(this); ">
+      <option value="images/chimere/foo.png"><p>Aucun</p></option>
+      <option value="images/chimere/prot1.gif"><p>1</p></option>
+      <option value="images/chimere/prot2.gif"><p>2</p></option>
+      <option value="images/chimere/prot3.gif"><p>3</p></option>
+      <option value="images/chimere/prot4.gif"><p>4</p></option>
+      <option value="images/chimere/prot5.gif"><p>5</p></option>
+    </select>
+  </div>
 
 </div>
 <script src="js/dragging.js"></script>

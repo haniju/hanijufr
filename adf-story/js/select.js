@@ -20,9 +20,19 @@ document.getElementById("dropTex").onchange = setTex;
   function showDivO() {
     document.getElementById("dragOeuil").style.visibility = "visible";
   };
-//document.getElementById("dropOeuil").onchange = showDivO;
 document.getElementById("dropOeuil").onchange = setOeuil;
 
+function setOeuil2() {
+    var img = document.getElementById("oeuil2");
+    img.src = this.value;
+    return false;
+};
+function showDivO2() {
+  document.getElementById("dragOeuil2").style.visibility = "visible";
+};
+document.getElementById("dropOeuil2").onchange = setOeuil2;
+
+//
 
 function setNez() {
     var img = document.getElementById("nez");
@@ -54,3 +64,13 @@ function showDivP() {
   document.getElementById("dragProt").style.visibility = "visible";
 }
 document.getElementById("dropProt").onchange = setProt;
+
+function setProt2() {
+    var img = document.getElementById("prot2");
+    img.src = this.value;
+    return false;
+}
+function showDivP2() {
+  document.getElementById("dragProt2").style.visibility = "visible";
+}
+document.getElementById("dropProt2").onchange = setProt2;

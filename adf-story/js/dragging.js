@@ -15,6 +15,23 @@ this.prevY = e.clientY;
 document.getElementById("dragOeuil").onmouseup = function() {
 this.mouseDown = false;
 }
+document.getElementById("dragOeuil2").onmousedown = function(e) {
+this.prevX = e.clientX;
+this.prevY = e.clientY;
+this.mouseDown = true;
+}
+document.getElementById("dragOeuil2").onmousemove = function(e) {
+if(this.mouseDown) {
+this.style.left = (Number(this.style.left.substring(0, this.style.left.length-2)) + (e.clientX - this.prevX)) + "px";
+this.style.top = (Number(this.style.top.substring(0, this.style.top.length-2)) + (e.clientY - this.prevY)) + "px";
+}
+this.prevX = e.clientX;
+this.prevY = e.clientY;
+}
+document.getElementById("dragOeuil2").onmouseup = function() {
+this.mouseDown = false;
+}
+
 document.getElementById("dragNez").onmousedown = function(e) {
 this.prevX = e.clientX;
 this.prevY = e.clientY;
@@ -61,5 +78,21 @@ this.prevX = e.clientX;
 this.prevY = e.clientY;
 }
 document.getElementById("dragProt").onmouseup = function() {
+this.mouseDown = false;
+}
+document.getElementById("dragProt2").onmousedown = function(e) {
+this.prevX = e.clientX;
+this.prevY = e.clientY;
+this.mouseDown = true;
+}
+document.getElementById("dragProt2").onmousemove = function(e) {
+if(this.mouseDown) {
+this.style.left = (Number(this.style.left.substring(0, this.style.left.length-2)) + (e.clientX - this.prevX)) + "px";
+this.style.top = (Number(this.style.top.substring(0, this.style.top.length-2)) + (e.clientY - this.prevY)) + "px";
+}
+this.prevX = e.clientX;
+this.prevY = e.clientY;
+}
+document.getElementById("dragProt2").onmouseup = function() {
 this.mouseDown = false;
 }
