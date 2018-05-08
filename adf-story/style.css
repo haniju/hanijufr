@@ -34,7 +34,7 @@ h2 {
     margin: 7px;
     text-transform: uppercase;
 }
-.chimere h2 {
+.fooChimere h2 {
   font-size: 16px;
 }
 h2#nom {
@@ -45,7 +45,7 @@ h2#nom {
 }
 .aide {
   position: absolute;
-  bottom: 39px;
+  top: -55px;
   left: 0px;
   width: 30px;;
   padding: 7px;
@@ -102,6 +102,7 @@ img {
   -moz-user-select: none;
   -o-user-select: none;
   user-select: none;
+
 }
 img.chim {
   pointer-events: none;
@@ -112,6 +113,11 @@ img.mirror {
         -ms-transform: scaleX(-1);
          -o-transform: scaleX(-1);
             transform: scaleX(-1);
+}
+img#tex {
+  width: 100%;
+  height: auto;
+  pointer-events: none;
 }
 iframe {
   height: 100%;
@@ -178,6 +184,9 @@ iframe {
   position:absolute;
   visibility: hidden;
 }
+.draggable {
+  cursor: pointer;
+}
 .draggable:hover .canvas {
   visibility: visible;
   }
@@ -188,18 +197,8 @@ iframe {
       rgba(255, 216, 0, 0),
       rgba(255, 216, 0, 0)
     );
-  padding: 10px;
+  padding: 3px;
 }
-/*#dragNez {
-  top: 160px;
-}
-#dragBou {
-  top: 220px;
-}
-#tex {
-  z-index: -11;
-  position: absolute;
-}*/
 
 .legend-box {
   position: absolute;
@@ -215,24 +214,8 @@ iframe {
   display: flex;
   flex-direction: row;
   align-items: center;
-  flex-wrap: wrap;
-  position: relative;
   width: 100%;
   bottom: 0px;
-  z-index: 100;
-  position: fixed;
-  margin: auto;
-  background-color: var(--white);
-}
-.footer-2 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-  position: absolute;
-  width: 100%;
-  height: auto;
-  bottom: 51px;
   z-index: 100;
   position: fixed;
   margin: auto;
@@ -254,23 +237,15 @@ iframe {
   background-color: var(--highlight1);
   color: var(--white);
 }
-.chimere .footer-button:hover {
+.fooChimere .footer-button:hover {
   background-color: none;
   color: inherit;
 }
-/*.buttact {
-    background-color: var(--highlight1);
-    color: var(--white);
+.fooChimere {
+  position: relative;
+  width: inherit;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.buttin {
-  background-color: unset;
-  color: black;
-}
-.dragselect {
-  position:relative;
-	width: auto;
-	height: auto;
-	cursor: move;
-  z-index:10;
-}
-*/

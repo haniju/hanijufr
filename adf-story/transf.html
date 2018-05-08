@@ -9,14 +9,7 @@
 
   <div class="content fixed">
 
-    <div class="aide">
-      <h2>?</h2>
-      <p class="instructions">\o/ Bienvenue sur la Chimère \o/<br>
-        1 - Selectionne-les éléments que tu veux afficher depuis les dropdowns, <br>
-        2 - Et déplace-les LENTEMENT sur l'écran <br>
-        3 - ENJOY !!!</p>
-    </div>
-    <div class="canvas" id="texture" style="width:100%; height:100%;">
+    <div class="canvas" id="texture" style="width:100%; height:100%; overflow:hidden;">
       <img id="tex" src="images/chimere/foo.png">
     </div>
 
@@ -45,7 +38,14 @@
 </div>
 
 
-<div class="footer-1 chimere">
+<div class="footer-1"><div class="fooChimere">
+  <div class="aide">
+    <h2>?</h2>
+    <p class="instructions">\o/ Bienvenue sur la Chimère \o/<br>
+      1 - Selectionne-les éléments que tu veux afficher depuis les dropdowns, <br>
+      2 - Et déplace-les LENTEMENT sur l'écran <br>
+      3 - ENJOY !!!</p>
+  </div>
   <div class="footer-button">
     <a href="chimere.html"><h2>BACK</h2></a>
   </div>
@@ -55,7 +55,7 @@
     <select id="dropTex" onclick="javascript: showDivT(this); ">
       <option value="images/chimere/foo.png"><p>Aucun</p></option>
       <option value="images/chimere/tex1.gif"><p>1</p></option>
-      <option value="images/chimere/tex2.png"><p>2</p></option>
+      <option value="images/chimere/tex22.gif"><p>2</p></option>
     </select>
   </div>
 
@@ -67,6 +67,7 @@
       <option value="images/chimere/oeuil2.gif"><p>Oeuil 2</p></option>
       <option value="images/chimere/oeuil3.gif"><p>Oeuil 3</p></option>
       <option value="images/chimere/oeuil4.gif"><p>Oeuil 4</p></option>
+      <option value="images/chimere/oeuil5.gif"><p>Oeuil 5</p></option>
       <option value="images/chimere/foo.png"><p>Rien</p></option>
     </select>
     <select id="dropOeuil" onclick="javascript: showDivO(this); ">
@@ -75,6 +76,7 @@
       <option value="images/chimere/oeuil2.gif"><p>Oeuil 2</p></option>
       <option value="images/chimere/oeuil3.gif"><p>Oeuil 3</p></option>
       <option value="images/chimere/oeuil4.gif"><p>Oeuil 4</p></option>
+      <option value="images/chimere/oeuil5.gif"><p>Oeuil 5</p></option>
       <option value="images/chimere/foo.png"><p>Rien</p></option>
     </select>
   </div>
@@ -117,7 +119,7 @@
     </select>
   </div>
 
-</div>
+</div></div>
 <script src="js/dragging.js"></script>
 <script src="js/select.js"></script>
 </body>
