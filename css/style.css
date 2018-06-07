@@ -1,13 +1,18 @@
-
 		@import url('https://fonts.googleapis.com/css?family=Exo:200,300,400,500,700,900');
 		:root {
 				--y0: white;
 				--y1: white;
 				--y2: #A8BEFF;
 				--y3: #445EBA;
-				--y4: #4B65C9;
+				--y4: black /*#4BC955 4B65C9*/;
 				--b: #DEDEDE;
-				--h0: #FBB03B;
+				--h0: #FE9A2B;
+				--h1: #f9ff00;
+				--h2: #54ffb1;
+				--h3: #54edff;
+				--h4: #ff54f1;
+				--h5: #ad54ff;
+
 			}
 			/*:root {
 				--y0: #FCEE21;
@@ -20,16 +25,18 @@
 			/* page background */
 			background-color: var(--y4);
 			margin: auto;
-			min-height: 100vh;
+			height: 100vh;
+			/*width: 100vw;*/
 			display: flex;
 			justify-content: center;
 			flex-direction: column;
+			box-sizing: border-box;
 		}
-		h1 img{
+/*		h1 img{
 			max-width:100%;
 			height:auto !important;
 			vertical-align:bottom;
-		}
+		}*/
 
 		/*responsive layout*/
 		@media all and (min-width: 1300px) {
@@ -48,7 +55,6 @@
 		    font-size: 30px !important;
 		  }
 			.intro {
-				width: 75% !important;
 			}
 			.container{
 				height: unset !important;
@@ -59,16 +65,27 @@
 		}
 		@media all and (max-width: 599px) and (min-width: 50px) {
 			h1{
-		    font-size: 22px !important;
 		  }
+			.home {
+				overflow: auto !important;
+			}
 			.container{
 				height: unset !important;
 			}
 			.intro {
-				width: 85% !important;
+				padding: 65px 30px !important;
+				height: auto !important;
 			}
 			.project-box {
 				padding: 7px 20px 37px 20px !important;
+				width: 100% !important;
+				height: auto !important;
+			}
+			.activites {
+				height: auto !important;
+			}
+			h2.activite {
+				width: 100% !important;
 			}
 			.modal-content {
 				width: 85vw !important;
@@ -81,6 +98,7 @@
 				width:90% !important;
 			}
 		}
+
 		::selection {
 			background-color: var(--h0);
 		}
@@ -93,14 +111,20 @@
 			margin-top:15px;
 			z-index:10;
 		}
+		img.petite {
+			width: 50% !important;
+			height: 50% !important;
+			overflow: hidden;
+		}
 		h1{
-			line-height:120%;
+			line-height:145%;
 			margin: 0px 0px 0px 0px;
 			padding: 0px 0px 0px 0px;
 			color: white;
 			font-family: 'Roboto Slab', serif;
 			font-weight:500;
 			letter-spacing:4px;
+			font-size: 9vw;
 		}
 		h2{
 			font-size:20px;
@@ -112,6 +136,22 @@
 			margin: 0px 0px 0px 0px;
 			padding: 0px 0px 0px 0px;
 			letter-spacing:2px;
+		}
+		h2.activite {
+			width: 20%;
+			height: auto;
+			padding: 30px 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			box-sizing: border-box;
+			text-align: center;
+		}
+		h2.activite:hover {
+			background-color: black;
+		}
+		.projets h2 {
+			font-size:4vw;
 		}
 		h3{
 			font-size:20px;
@@ -140,7 +180,7 @@
 			line-height:130%;
 			font-family: 'Droid Sans', sans-serif;
 			font-size:16px;
-			color:var(--b);
+			color: white;
 			font-weight:400;
 			letter-spacing:2px;
 			margin: 0px 0px 0px 0px;
@@ -195,8 +235,10 @@
 			font-weight: 100;
 			font-size: 16px;
 			letter-spacing:2px;
-			color:var(--h0);
+			background-color:var(--h0);
+			color: var(--y0);
 			text-transform: uppercase;
+			margin: 0px 7px;
 		}
 		.project-button:hover {
 			background-color: var(--h0);
@@ -211,25 +253,55 @@
 		}
 
 /*global config*/
-.logo {
+/*.logo {
 	font-size: 25px;
 	line-height: 47px;
 	letter-spacing: 2px;
 	color: white;
-}
+}*/
 .container{
 	display: block;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	margin: auto;
+	box-sizing: border-box;
+}
+.home {
+	width:100%;
+	height:100vh;
+	overflow: hidden;
+}
+.projets {
+	height: 100%;
 }
 .intro {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 45vw;
+	justify-content: center;
 	text-align: justify;
+	padding: 80px 0px;
+	width: 100%;
+	height: 58%;
+	box-sizing: border-box;
+}
+.projets .intro {
+	height: auto;
+	text-align: center;
+}
+.projets .intro p {
+	width: 45vw;
+	font-size: 14px;
+	margin-top: 30px;
+}
+.activites {
+	width: 100%;
+	height: 42%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	box-sizing: border-box;
 }
 .highlight {
 	display: flex;
@@ -249,7 +321,7 @@
 	position: fixed;
 	top: 0px;
 }
-.space {
+/*.space {
 	margin: auto;
 	height: 10px;
 	width: 100%;
@@ -258,7 +330,7 @@
 	display: flex;
 	flex-direction: column;
 	margin: auto;
-}
+}*/
 .project-space {
 	display: flex;
 	flex-flow: wrap;
@@ -268,14 +340,67 @@
 .project-box {
 	display: flex;
   flex-direction: column;
-	flex-grow: 1;
-	padding: 7px 230px 37px 230px;
+	width: 50%;
+	height: 380px;
+	padding: 7px 20px 37px 20px;
+	border: 6px solid var(--y4);
+	border-top: 0px;
+	border-left: 0px;
   align-content: center;
 	justify-content: center;
 	background-color: var(--y4);
+	box-sizing: border-box;
+}
+.media {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	flex-wrap:wrap;
+	box-sizing: border-box;
+	padding: 0px 0px 40px 0px;
+	overflow: auto;
+	overflow-y: hidden;
+	width: 80%;
+	height: 380px;
+	position: relative;
+	background-color: var(--y4);
+}
+.media img {
+	margin-left: 10px;
+	height: 100%;
+	width: auto;
+}
+
+.scroll-btn {
+	visibility: hidden;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	background-color: pink;
+}
+.media:hover .scroll-btn {
+	visibility: visible;
+}
+.slideshow {
+	width: auto;
+	height: inherit;
+	display: flex;
+	position: absolute;
+	left: 0%;
+	padding: 10px;
+	box-sizing: border-box;
 }
 .project-box:hover {
-	background-color: var(--y3);
+	/*background-color: var(--y3);*/
+	border: 6px solid yellow;
+	color: pink;
+	border-top: 0px;
+	border-left: 0px;
+}
+
+.project-box:hover p {
+	color: var(--h1);
 }
 .project-box-a {
   display: flex;
@@ -294,7 +419,7 @@
 }
 .project-button-i {
 	flex-basis: content;
-	padding: 0px 5px 0px 5px;
+	padding: 0px 20px;
 	font-family: 'Droid Sans', sans-serif;
 	font-weight: 100;
 	font-size: 14px;

@@ -1,0 +1,59 @@
+a {
+  text-decoration: none;
+}
+.a:link,a:active,a:visited,a{
+  color:unset;
+}
+.activites a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.activites a:hover{
+  color: var(--y4);
+}
+a:hover{
+  color: var(--y3);
+  font-weight: 500;
+}
+.projets a:link, .projets a:active, .projets a:visited, .projets a{
+  color:var(--h0);
+}
+ .projets a:hover{
+  color: var(--y3);
+  font-weight: 500;
+}
+button:link,button:active,button:visited,button,.button span{
+  background-color: unset;
+  border: none;
+}
+.button{
+  background-color: unset;
+  border: none;
+  height: 100%;
+}
+.project-button {
+  flex-basis: content;
+  padding: 0px 10px 0px 10px;
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+  letter-spacing:2px;
+  background-color:var(--h0);
+  color: var(--y0);
+  text-transform: uppercase;
+  margin: 0px 7px;
+}
+.project-button:hover {
+  background-color: var(--h0);
+  color:var(--y3);
+  font-weight: 300;
+}
+.button:hover{
+  background-color: unset;
+  border: none;
+  background-color: var(--h0);
+  color:#ffffff !important;
+}

@@ -1,0 +1,169 @@
+.home {
+	width:100%;
+	height:100vh;
+	overflow: hidden;
+}
+.projets {
+	height: 100%;
+}
+.intro {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: justify;
+	padding: 80px 0px;
+	width: 100%;
+	height: 58%;
+	box-sizing: border-box;
+}
+.projets .intro {
+	height: auto;
+	text-align: center;
+}
+.projets .intro p {
+	width: 45vw;
+	font-size: 14px;
+	margin-top: 30px;
+}
+.activites {
+	width: 100%;
+	height: 42%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	box-sizing: border-box;
+}
+h2.activite:nth-of-type(1):hover a{
+	background-color: var(--h1)
+}
+h2.activite:nth-of-type(2):hover a{
+	background-color: var(--h2)
+}
+h2.activite:nth-of-type(3):hover a{
+	background-color: var(--h3)
+}
+h2.activite:nth-of-type(4):hover a{
+	background-color: var(--h4)
+}
+h2.activite:nth-of-type(5):hover a{
+	background-color: var(--h5)
+}
+.highlight {
+	display: flex;
+  flex-direction: column;
+	margin: 5px 5px 5px 5px;
+	background-color: var(--y3);
+}
+.project-space {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
+	width: 100%;
+}
+.project-box {
+	display: flex;
+  flex-direction: column;
+	width: 50%;
+	height: 380px;
+	padding: 7px 20px 37px 20px;
+	border: 6px solid var(--y4);
+	border-top: 0px;
+	border-left: 0px;
+  align-content: center;
+	justify-content: center;
+	background-color: var(--y4);
+	box-sizing: border-box;
+}
+.media {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	flex-wrap:wrap;
+	box-sizing: border-box;
+	padding: 0px 0px 40px 0px;
+	overflow: auto;
+	overflow-y: hidden;
+	width: 80%;
+	height: 380px;
+	position: relative;
+	background-color: var(--y4);
+}
+.scroll-btn {
+	visibility: hidden;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	background-color: pink;
+}
+.media:hover .scroll-btn {
+	visibility: visible;
+}
+.slideshow {
+	width: auto;
+	height: inherit;
+	display: flex;
+	position: absolute;
+	left: 0%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.project-box:hover {
+	border-top: 0px !important;
+	border-left: 0px !important;
+}
+.webP .project-box:hover p {
+	color: var(--h1);
+}
+.webP .project-box:hover {
+	border: 6px solid var(--h1);
+}
+.eventP .project-box:hover p {
+	color: var(--h2);
+}
+.eventP .project-box:hover {
+	border: 6px solid var(--h2);
+}
+.daP .project-box:hover p {
+	color: var(--h3);
+}
+.daP .project-box:hover {
+	border: 6px solid var(--h3);
+}
+.dpP .project-box:hover p {
+	color: var(--h4);
+}
+.dpP .project-box:hover {
+	border: 6px solid var(--h4);
+}
+.funP .project-box:hover p {
+	color: var(--h5);
+}
+.funP .project-box:hover {
+	border: 6px solid var(--h5);
+}
+.project-box-a {
+  display: flex;
+	flex-direction: column;
+  flex-basis: 1;
+	padding: 15px 15px 10px 15px;
+	text-align: center;
+}
+.project-box-b {
+	display: flex;
+  flex-direction: row;
+	flex-wrap: wrap;
+  justify-content: left;
+	justify-content: center;
+	padding: 5px 5px 10px 5px;
+}
+.project-button-i {
+	flex-basis: content;
+	padding: 0px 20px;
+	font-family: 'Droid Sans', sans-serif;
+	font-weight: 100;
+	font-size: 14px;
+	letter-spacing:2px;
+	color:var(--b);
+}

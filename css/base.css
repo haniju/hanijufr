@@ -1,0 +1,81 @@
+@import "font.css";
+@import "buttons.css";
+@import "boxes.css";
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans:100,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
+:root {
+  --y0: white;
+  --y1: white;
+  --y2: #A8BEFF;
+  --y3: #445EBA;
+  --y4: black /*#4BC955 4B65C9*/;
+  --b: #DEDEDE;
+  --h0: #FE9A2B;
+  --h1: #f9ff00;
+  --h2: #54ffb1;
+  --h3: #54edff;
+  --h4: #ff54f1;
+  --h5: #ad54ff;
+}
+body {
+  background-color: var(--y4);
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+::selection {
+  background-color: var(--h0);
+}
+::-moz-selection {
+  background: var(--h0);
+}
+img.img-portfolio {
+  width:35%;
+  margin:auto;
+  margin-top:15px;
+  /*z-index:10;*/
+}
+img.petite {
+  width: 50% !important;
+  height: 50% !important;
+  overflow: hidden;
+}
+.media img {
+	margin-left: 10px;
+	height: 100%;
+	width: auto;
+}
+.title {
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+	text-align: left;
+	background-color: var(--y0);
+	color: var(--y4);
+	width: 100%;
+	height: 35px;
+	position: fixed;
+	top: 0px;
+  z-index: 10;
+}
+.container{
+	display: block;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	box-sizing: border-box;
+}
+.footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+	background-color: var(--y0);
+	bottom: 0px;
+	text-align: center;
+}
