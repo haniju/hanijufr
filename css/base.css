@@ -14,8 +14,8 @@
   --h1: #f9ff00;
   --h2: #54ffb1;
   --h3: #54edff;
-  --h4: #ff54f1;
-  --h5: #ad54ff;
+  --h4: #ab78ff;
+  --h5: #ff54f1;
 }
 body {
   background-color: var(--y4);

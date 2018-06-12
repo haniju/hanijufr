@@ -151,36 +151,42 @@ h2.activite:nth-of-type(5):hover a{
 	border-top: 0px !important;
 	border-left: 0px !important;
 }
+
 .webP .project-box:hover p {
 	color: var(--h1);
 }
 .webP .project-box:hover {
 	border: 6px solid var(--h1);
 }
-.eventP .project-box:hover p {
+
+.daP .project-box:hover p {
 	color: var(--h2);
 }
-.eventP .project-box:hover {
+.daP .project-box:hover {
 	border: 6px solid var(--h2);
 }
-.daP .project-box:hover p {
+
+.dpP .project-box:hover p {
 	color: var(--h3);
 }
-.daP .project-box:hover {
+.dpP .project-box:hover {
 	border: 6px solid var(--h3);
 }
-.dpP .project-box:hover p {
+
+.eventP .project-box:hover p {
 	color: var(--h4);
 }
-.dpP .project-box:hover {
+.eventP .project-box:hover {
 	border: 6px solid var(--h4);
 }
+
 .funP .project-box:hover p {
 	color: var(--h5);
 }
 .funP .project-box:hover {
 	border: 6px solid var(--h5);
 }
+
 .project-box-a {
   display: flex;
 	flex-direction: column;
