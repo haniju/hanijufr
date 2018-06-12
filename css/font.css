@@ -46,6 +46,11 @@ h3{
   padding: 0px 0px 0px 0px;
   text-transform: uppercase;
 }
+h3.legend {
+  position: absolute;
+  left: -20px;
+  top: -20px;
+}
 h4{
   line-height:130%;
   font-family: 'Droid Sans', sans-serif;

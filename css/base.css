@@ -62,7 +62,7 @@ img.petite {
   z-index: 10;
 }
 .container{
-	display: block;
+	display: flex/*block scroll fix*/;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
