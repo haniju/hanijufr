@@ -1,3 +1,20 @@
+@media all and (max-width: 959px) and (min-width: 600px) {
+
+}
+@media all and (max-width: 599px) and (min-width: 50px) {
+	.intro {
+		padding: 95px 25px 25px 25px !important;
+		height: auto !important;
+	}
+	.mCustomScrollbar {
+		width: 90vw !important;
+	}
+	.project-box {
+		width: 100% !important;
+		margin-bottom: 25px !important;
+	}
+}
+
 .home {
 	width:100%;
 	height:100vh;
@@ -61,12 +78,13 @@ h2.activite:nth-of-type(5):hover a{
 	justify-content: center;
 	width: auto;
 	position: relative;
+	padding-top: 35px;
 }
 .project-box {
 	display: flex;
   flex-direction: column;
 	width: 50%;
-	height: 380px;
+	height: 420px;
 	padding: 7px 20px 37px 20px;
 	border: 6px solid var(--y4);
 	border-top: 0px;
@@ -87,7 +105,7 @@ h2.activite:nth-of-type(5):hover a{
 	overflow-y: hidden;
 	width: 70vw;
 	height: 400px;
-	margin: 20px 0px;
+	margin: 0px 0px 20px 0px;
 	position: relative;
 	background-color: var(--y4);
 }
@@ -114,6 +132,7 @@ h2.activite:nth-of-type(5):hover a{
 	background-color: white;
 }
 .mCustomScrollbar .item{
+	width: auto !important;
 }
 .scroll-btn-l, .scroll-btn-r {
 	visibility: hidden;

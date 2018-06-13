@@ -5,12 +5,13 @@
 <html>
 
 <head>
-  <title>Haniju - Design de produits numeriques</title>
+  <title>Haniju Design - Evenementiel</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <link rel="icon" type="image/png" href="images/fav.png">
   <link rel="stylesheet" type="text/css" href="css/base.css">
-  <script type="text/javascript" src="scripts.js"></script>
+  <link rel="stylesheet" href="js/scroll/jquery.mCustomScrollbar.css"/>
 
   <meta name="description" content="Design de produit numerique">
   <meta name="keywords" content="design,paris,france,product,produit,digital,numerique,pédagogie,pedagogy,user-centered">
@@ -25,6 +26,28 @@
 </head>
 
 <body class="projets eventP">
+  <script>
+  (function($){
+    $(window).on("load",function(){
+      $(".mcs-horizontal-example").mCustomScrollbar({
+        axis:"x",
+        theme:"dark-3",
+        advanced:{
+          autoExpandHorizontalScroll:true
+        },
+        callbacks:{
+          onCreate:function(){
+            $(this).find(".item").css("width",$(this).width());
+          },
+          onBeforeUpdate:function(){
+            $(this).find(".item").css("width",$(this).width());
+          }
+        }
+      });
+    });
+  })(jQuery);
+  </script>
+
   <div class="title">
     <a href="index.html">
       <h3><---</h3>
@@ -39,8 +62,23 @@
       <h2>Evenementiel et facillitation</h2>
       <p>DA + Pédagogie (contenu & format) + Animation + Atelier prototypage</p>
     </div>
-    <div class="project-space">
 
+    <div class="project-space">
+      <h3 class="legend">Nos Réalisations :</h2>
+      <div class="media mCustomScrollbar">
+          <img class="item" src="images/event/blockfest101.jpg">
+          <img class="item" src="images/event/blockfest102.jpg">
+          <img class="item" src="images/event/blockfest103.jpg">
+          <img class="item" src="images/event/blockfest104.png">
+          <img class="item" src="images/event/blockfest106.jpg">
+          <img class="item" src="images/event/blockfest107.png">
+          <img class="item" src="images/event/blockfest108.png">
+          <img class="item" src="images/empty.png">
+      </div>
+    </div>
+
+    <div class="project-space">
+      <h3 class="legend special">Les projets :</h2>
       <div class="project-box">
         <div class="project-box-a">
           <img src="images/logo_blockfest.svg" class="img-portfolio">
@@ -73,7 +111,7 @@
           </a-->
         </div>
       </div>
-      
+
       <div class="project-box">
         <div class="project-box-a">
           <img src="images/logo_cemgm.svg" class="img-portfolio">
@@ -109,21 +147,7 @@
         </div>
       </div>
 
-      <div class="project-space">
-        <div class="scroll-btn-l"></div>
-        <div class="scroll-btn-r"></div>
-        <div class="media">
-          <div class="slideshow">
-            <img src="images/event/blockfest101.jpg">
-            <img src="images/event/blockfest102.jpg">
-            <img src="images/event/blockfest103.jpg">
-            <img src="images/event/blockfest104.png">
-            <img src="images/event/blockfest106.jpg">
-            <img src="images/event/blockfest107.png">
-            <img src="images/event/blockfest108.png">
-          </div>
-        </div>
-      </div>
+
 				<!--div class="project-box">
           <div class="project-box-a">
             <img src="images/logo_jerry.svg" class="img-portfolio">
@@ -165,6 +189,9 @@
   <div class="footer">
     <h4 style="color:var(--y3)">Haniju Design - CC-BY-SA-NC Justine Hannequin - <a href="https://github.com/haniju/haniju.fr">Code source</a></h4>
   </div>
+  <script src="js/scroll/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script type="text/javascript" src="scripts.js"></script>
+
 </body>
 </html>
 

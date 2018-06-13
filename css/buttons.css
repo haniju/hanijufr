@@ -102,7 +102,7 @@ a {
   color: var(--h4);
 }
 
-.funP project-box:hover .project-button a {
+.funP .project-box:hover .project-button a {
   background-color: var(--h5);
   color: black;
 }

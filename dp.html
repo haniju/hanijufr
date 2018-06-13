@@ -5,12 +5,13 @@
 <html>
 
 <head>
-  <title>Haniju - Design de produits numeriques</title>
+  <title>Haniju Design - Design pédagogique</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <link rel="icon" type="image/png" href="images/fav.png">
   <link rel="stylesheet" type="text/css" href="css/base.css">
-  <script type="text/javascript" src="scripts.js"></script>
+  <link rel="stylesheet" href="js/scroll/jquery.mCustomScrollbar.css"/>
 
   <meta name="description" content="Design de produit numerique">
   <meta name="keywords" content="design,paris,france,product,produit,digital,numerique,pédagogie,pedagogy,user-centered">
@@ -25,6 +26,28 @@
 </head>
 
 <body class="projets dpP">
+  <script>
+  (function($){
+    $(window).on("load",function(){
+      $(".mcs-horizontal-example").mCustomScrollbar({
+        axis:"x",
+        theme:"dark-3",
+        advanced:{
+          autoExpandHorizontalScroll:true
+        },
+        callbacks:{
+          onCreate:function(){
+            $(this).find(".item").css("width",$(this).width());
+          },
+          onBeforeUpdate:function(){
+            $(this).find(".item").css("width",$(this).width());
+          }
+        }
+      });
+    });
+  })(jQuery);
+  </script>
+
   <div class="title">
     <a href="index.html">
       <h3><---</h3>
@@ -36,157 +59,96 @@
 
 	<div class="container projets" style="margin-top:30px; margin-bottom: 60px;">
     <div class="intro">
-      <h2>Design pédagogique et contenu</h2>
-      <p>Contenu de formation, illustrations pédagogiques, principes pédagogique dans le design</p>
+      <h2>Design et contenus pédagogiques</h2>
+      <p>Contenus de formation, illustrations pédagogiques, principes pédagogique dans le design</p>
     </div>
 
       <div class="project-space">
-        <div class="media">
-          <div class="slideshow">
-            <img src="images/web/tree.png">
-            <img src="images/web/navigation.png">
-            <img src="images/web/patterns.png">
-            <img src="images/web/maquette.png">
-            <img src="images/web/maqinter.png">
-          </div>
-          <div class="scroll-btn">vvvv</div>
+        <h3 class="legend">Nos réalisations :</h2>
+        <div class="media mCustomScrollbar">
+            <img class="item" src="images/dp/schemas-09.png">
+            <img class="item" src="images/dp/jerry_doc.png">
+            <img class="item" src="images/dp/jerry_drive.png">
+            <img class="item" src="images/dp/schemas-10.png">
+            <img class="item" src="images/dp/schemas-11.png">
+            <img class="item" src="images/dp/schemas-12.png">
+            <img class="item" src="images/dp/organigram.png">
+            <img class="item" src="images/empty.png">
         </div>
       </div>
 
       <div class="project-space">
-        <div class="project-box">
-          <div class="project-box-a">
-            <img src="images/web/frex.svg" style="height:29px;" class="img-portfolio">
-      			<p><br>"FREX - plateforme de matching pour le transport de matières premières énergétiques"</p>
-            <p class="small"><br><br>Application en cours de publication<br></p>
-          </div>
-
-          <div class="project-box-b">
-            <div class="project-button-i">
-              2017-2018
-            </div>
-            <div class="project-button-i">
-              Lead UX UI
-            </div>
-            <div class="project-button-i">
-              Direction Artistique
-            </div>
-            <div class="project-button-i">
-              Integration HTML & CSS
-            </div>
-          </div>
-
-          <div class="project-box-b">
-            <div class="project-button">
-              <a href="" target="_blank">Lien à venir</a>
-            </div>
-            <!--a href="http://base.blockfest.fr/" target="_blank">
-              <div class="project-button">
-              Plateforme documentaire
-              </div>
-            </a-->
-          </div>
-        </div>
+        <h3 class="legend special">Et particulièrement :</h2>
 
         <div class="project-box">
-          <div class="project-box-a">
-            <img src="images/web/bma.svg" class="img-portfolio" style="height:80px;">
-            <p><br>"Accompagnement web pourla mise en pratique de bonnes
-              pratiques de la mobilité consciente en entreprise"<br><br></p>
-            <p class="small">
-            Projet financé par l'ADEME<br><br></p>
-          </div>
-
-          <div class="project-box-b">
-            <div class="project-button-i">
-              2017-2018
-            </div>
-            <div class="project-button-i">
-              Lead UX UI
-            </div>
-            <div class="project-button-i">
-              Direction Artistique
-            </div>
-            <div class="project-button-i">
-              Integration HTML & CSS
-            </div>
-            <div class="project-button-i">
-              Design graphique
-            </div>
-          </div>
-          <div class="project-box-b">
-            <div class="project-button">
-              <a href="" target="_blank">Présentation</a>
-            </div>
-            <div class="project-button">
-              <a href="" target="_blank">Home Page</a>
-            </div>
-          </div>
-        </div>
-
-				<div class="project-box">
           <div class="project-box-a">
             <img src="images/logo_jerry.svg" class="img-portfolio">
-            <p><br>"Dissémination de jouets hybrido-interactifs pour
-            manifestations festives"<br><br></p>
-            <p class="small">
-            Collectif pluri-diciplinaire. Installations vidéo, musicales et plastiques pour
-            l'univers des soirées.<br><br></p>
+	          <p><br>"S'approprier l'informatique de milles & une façons !"<br><br></p>
+            <p class="small">Jerry DIT c'est un ensemble de ressources pour déconstruire et reconstruire un informatique
+              juste et intelligible, c'est aussi une communauté de plus de 1000 personnes qui font vire cette belle idée<br><br></p>
           </div>
 
           <div class="project-box-b">
             <div class="project-button-i">
-              2014
-            </div>
-            <div class="project-button-i">
-              Co-fondatrice
-            </div>
-            <div class="project-button-i">
-              Mapping vidéo
-            </div>
-
-            <div class="project-button-i">
-              Scenographie
+            2012 - Aujourd'hui
             </div>
             <div class="project-button-i">
               Documentation
             </div>
+            <div class="project-button-i">
+              Facilitation
+            </div>
+            <div class="project-button-i">
+              Design graphique - DA
+            </div>
           </div>
           <div class="project-box-b">
             <div class="project-button">
-            <a href="http://lesanimauxdufutur.net" target="_blank">Site web</a>
+              <a href="youandjerrycan.org" target="_blank">Présentation</a>
             </div>
             <div class="project-button">
-              <a href="https://www.facebook.com/animauxdufutur/" target="_blank">Page FB</a>
+              <a href="http://www.adoptajerry.cc/" target="_blank">Adoptajerry.cc</a>
             </div>
           </div>
         </div>
 
         <div class="project-box">
           <div class="project-box-a">
-            <img src="images/logo_openvhub.svg" class="img-portfolio">
-	          <p><br>"Rendre visible un projet et son avancement, pour tous ses contributeurs"<br><br></p>
-            <p class="small">Application de management visuel de projet open source. L'affichage est piloté via une interface d'administration dediée.<br><br></p>
+            <img src="images/logo_edtech.svg" class="img-portfolio">
+	          <p><br>"Master EDTECH au CRI - La place de la pédagogie dans les objectifs du design"<br><br></p>
+            <p class="small">Master en 2 ans sur la pédagogie, ses principes et ses modalités, rehcerche personelle sur les expériences pédagogiques<br><br></p>
           </div>
 
           <div class="project-box-b">
             <div class="project-button-i">
-            2016
+              2014 - 2016
             </div>
             <div class="project-button-i">
-            Lead design UI/UX
+            Apprendre en faisant
             </div>
             <div class="project-button-i">
-            Chef de produit
+            Sciences cognitives
             </div>
+            <div class="project-button-i">
+            Serious games
+            </div>
+            <div class="project-button-i">
+            Démarche scientifique
+            </div>
+
           </div>
           <div class="project-box-b">
             <div class="project-button">
-              <a href="" target="_blank">Présentation</a>
+              <a href="https://docs.google.com/document/d/10lOU609vBVRFW86JQjfRKddyABjBYv4wYLWnfS3Qnao/edit?usp=sharing" target="_blank">Note de master</a>
             </div>
+            <!--div class="project-button">
+              <a href="http://www.adoptajerry.cc/" target="_blank">Adoptajerry.cc</a>
+            </div-->
           </div>
         </div>
       </div>
     </div>
-</body>
+    <script src="js/scroll/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+ </body>
 </html>

@@ -76,6 +76,17 @@ img.petite {
 	flex-wrap: wrap;
 	width: 100%;
 	background-color: var(--y0);
-	bottom: 0px;
 	text-align: center;
+  bottom: 0px;
+}
+
+@media all and (max-width: 959px) and (min-width: 600px) {
+}
+@media all and (max-width: 599px) and (min-width: 50px) {
+  .container{
+    overflow: auto;
+  }
+  img.img-portfolio {
+    width: 75% !important;
+  }
 }
