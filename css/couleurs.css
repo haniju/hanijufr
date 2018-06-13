@@ -1,9 +1,0 @@
-.project-button {
-  background-color:var(--h0);
-  color: var(--y0);
-}
-
-.project-button:hover {
-  background-color: var(--h0);
-  color:var(--y3);
-}

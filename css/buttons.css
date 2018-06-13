@@ -1,3 +1,8 @@
+@media all and (min-width: 1300px) {
+	.project-button {
+		font-size: 20px !important;
+	}
+}
 a {
   text-decoration: none;
 }
@@ -49,68 +54,8 @@ a {
 .project-button:hover {
   font-weight: 300;
 }
-
-.webP .project-box:hover .project-button a {
-  background-color: var(--h1);
-  color: black;
-}
-.webP .project-button a {
-  padding: 0px 10px;
-  color: var(--h1);
-}
-.webP .project-box:hover .project-button:hover a {
-  background-color: black;
-  color: var(--h1);
-}
-
-.daP .project-box:hover .project-button a {
-  background-color: var(--h2);
-  color: black;
-}
-.daP .project-button a {
-  color: var(--h2);
+.project-button a {
   padding: 0px 10px;
 }
-.daP .project-box:hover .project-button:hover a {
-  background-color: black;
-  color: var(--h2);
-}
-
-.dpP .project-box:hover .project-button a {
-  background-color: var(--h3);
-  color: black;
-}
-.dpP .project-button a {
-  color: var(--h3);
-  padding: 0px 10px;
-}
-.dpP .project-box:hover .project-button:hover a {
-  background-color: black;
-  color: var(--h3);
-}
-
-.eventP .project-box:hover .project-button a {
-  background-color: var(--h4);
-  color: black;
-}
-.eventP .project-button a {
-  color: var(--h4);
-  padding: 0px 10px;
-}
-.eventP .project-box:hover .project-button:hover a {
-  background-color: black;
-  color: var(--h4);
-}
-
-.funP .project-box:hover .project-button a {
-  background-color: var(--h5);
-  color: black;
-}
-.funP .project-button a {
-  color: var(--h5);
-  padding: 0px 10px;
-}
-.funP .project-box:hover .project-button:hover a {
-  background-color: black;
-  color: var(--h5);
-}
+.project-box:hover .project-button a {color: black;}
+.project-box:hover .project-button:hover a {background-color: black;}

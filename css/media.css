@@ -1,0 +1,88 @@
+@media all and (min-width: 1300px) {
+	.media {
+		height: 600px !important;
+	}
+}
+@media all and (max-width: 959px) and (min-width: 600px) {
+
+}
+@media all and (max-width: 599px) and (min-width: 50px) {
+	.mCustomScrollbar {
+		width: 90vw !important;
+	}
+}
+.media {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	flex-wrap:wrap;
+	box-sizing: border-box;
+	overflow: auto;
+	overflow-y: hidden;
+	width: 70vw;
+	height: 500px;
+	margin: 0px 0px 20px 0px;
+	position: relative;
+	background-color: var(--y4);
+}
+
+.mCustomScrollbar {
+	width: 70vw;
+  overflow-x: auto;
+  display: -webkit-flex; display: flex;
+  -webkit-flex-direction: row; flex-direction: row;
+  align-items: flex-start;
+  -webkit-flex-shrink: 1; flex-shrink: 1;
+}
+.mCustomScrollbar .mCSB_container{
+  display: -webkit-flex;
+	display: flex;
+	width: inherit;
+	height: inherit;
+}
+.mCustomScrollBox {
+	padding-bottom: 30px;
+	box-sizing: border-box;
+}
+.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+	bottom: 6px !important;
+}
+.mCSB_dragger_bar {
+	background-color: white !important;
+}
+.mCustomScrollbar .item{
+	width: auto !important;
+}
+.scroll-btn-l, .scroll-btn-r {
+	visibility: hidden;
+	position: absolute;
+	font-size: 0px;
+	line-height: 0%; width: 0px;
+}
+.scroll-btn-l {
+	border-right: 15px solid white;
+	border-top: 30px solid transparent;
+	border-bottom: 30px solid transparent;
+	left: 60px;
+	top: 45%;
+}
+.scroll-btn-r {
+	border-left: 15px solid white;
+	border-top: 30px solid transparent;
+	border-bottom: 30px solid transparent;
+	right: 60px;
+	top: 45%;
+}
+.project-space:hover .scroll-btn-r, .project-space:hover .scroll-btn-l {
+	visibility: visible;
+}
+.slideshow {
+	width: auto;
+	height: 100%;
+	display: flex;
+	position: absolute;
+	left: 0%;
+	padding: 10px 10px 20px 10px;
+	box-sizing: border-box;
+}

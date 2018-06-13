@@ -1,3 +1,12 @@
+@media all and (min-width: 1300px) {
+	.project-button-i {
+		font-size: 17px !important;
+	}
+	.project-box {
+		padding-right: 45px !important;
+		padding-left: 45px !important;
+	}
+}
 @media all and (max-width: 959px) and (min-width: 600px) {
 
 }
@@ -5,9 +14,6 @@
 	.intro {
 		padding: 95px 25px 25px 25px !important;
 		height: auto !important;
-	}
-	.mCustomScrollbar {
-		width: 90vw !important;
 	}
 	.project-box {
 		width: 100% !important;
@@ -51,21 +57,6 @@
 	justify-content: center;
 	box-sizing: border-box;
 }
-h2.activite:nth-of-type(1):hover a{
-	background-color: var(--h1)
-}
-h2.activite:nth-of-type(2):hover a{
-	background-color: var(--h2)
-}
-h2.activite:nth-of-type(3):hover a{
-	background-color: var(--h3)
-}
-h2.activite:nth-of-type(4):hover a{
-	background-color: var(--h4)
-}
-h2.activite:nth-of-type(5):hover a{
-	background-color: var(--h5)
-}
 .highlight {
 	display: flex;
   flex-direction: column;
@@ -94,118 +85,10 @@ h2.activite:nth-of-type(5):hover a{
 	background-color: var(--y4);
 	box-sizing: border-box;
 }
-.media {
-	display: flex;
-	flex-direction: column;
-	align-content: center;
-	justify-content: center;
-	flex-wrap:wrap;
-	box-sizing: border-box;
-	overflow: auto;
-	overflow-y: hidden;
-	width: 70vw;
-	height: 400px;
-	margin: 0px 0px 20px 0px;
-	position: relative;
-	background-color: var(--y4);
-}
-
-.mCustomScrollbar {
-	width: 70vw;
-  overflow-x: auto;
-  display: -webkit-flex; display: flex;
-  -webkit-flex-direction: row; flex-direction: row;
-  align-items: flex-start;
-  -webkit-flex-shrink: 1; flex-shrink: 1;
-}
-.mCustomScrollbar .mCSB_container{
-  display: -webkit-flex;
-	display: flex;
-	width: inherit;
-	height: inherit;
-}
-.mCustomScrollBox {
-	padding-bottom: 30px;
-	box-sizing: border-box;
-}
-.mCSB_dragger_bar {
-	background-color: white;
-}
-.mCustomScrollbar .item{
-	width: auto !important;
-}
-.scroll-btn-l, .scroll-btn-r {
-	visibility: hidden;
-	position: absolute;
-	font-size: 0px;
-	line-height: 0%; width: 0px;
-}
-.scroll-btn-l {
-	border-right: 15px solid white;
-	border-top: 30px solid transparent;
-	border-bottom: 30px solid transparent;
-	left: 60px;
-	top: 45%;
-}
-.scroll-btn-r {
-	border-left: 15px solid white;
-	border-top: 30px solid transparent;
-	border-bottom: 30px solid transparent;
-	right: 60px;
-	top: 45%;
-}
-.project-space:hover .scroll-btn-r, .project-space:hover .scroll-btn-l {
-	visibility: visible;
-}
-.slideshow {
-	width: auto;
-	height: 100%;
-	display: flex;
-	position: absolute;
-	left: 0%;
-	padding: 10px 10px 20px 10px;
-	box-sizing: border-box;
-}
 .project-box:hover {
 	border-top: 0px !important;
 	border-left: 0px !important;
 }
-
-.webP .project-box:hover p {
-	color: var(--h1);
-}
-.webP .project-box:hover {
-	border: 6px solid var(--h1);
-}
-
-.daP .project-box:hover p {
-	color: var(--h2);
-}
-.daP .project-box:hover {
-	border: 6px solid var(--h2);
-}
-
-.dpP .project-box:hover p {
-	color: var(--h3);
-}
-.dpP .project-box:hover {
-	border: 6px solid var(--h3);
-}
-
-.eventP .project-box:hover p {
-	color: var(--h4);
-}
-.eventP .project-box:hover {
-	border: 6px solid var(--h4);
-}
-
-.funP .project-box:hover p {
-	color: var(--h5);
-}
-.funP .project-box:hover {
-	border: 6px solid var(--h5);
-}
-
 .project-box-a {
   display: flex;
 	flex-direction: column;
@@ -229,4 +112,5 @@ h2.activite:nth-of-type(5):hover a{
 	font-size: 14px;
 	letter-spacing:2px;
 	color:var(--b);
+	text-transform: uppercase;
 }

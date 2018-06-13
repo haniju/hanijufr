@@ -1,8 +1,11 @@
 @import "font.css";
 @import "buttons.css";
 @import "boxes.css";
+@import "specialColors.css";
+@import "media.css";
 @import url('https://fonts.googleapis.com/css?family=Droid+Sans:100,300,400,700');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
+
 :root {
   --y0: white;
   --y1: white;
@@ -31,6 +34,11 @@ body {
 }
 ::-moz-selection {
   background: var(--h0);
+}
+@media all and (min-width: 1300px) {
+  img.img-portfolio {
+    width: 45% !important;
+  }
 }
 img.img-portfolio {
   width:35%;
