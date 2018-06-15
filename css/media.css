@@ -10,6 +10,12 @@
 	.mCustomScrollbar {
 		width: 90vw !important;
 	}
+	.media {
+		height: 280px !important;
+	}
+}
+#video {
+margin-left: 35px;
 }
 .media {
 	display: flex;

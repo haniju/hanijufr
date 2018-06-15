@@ -76,6 +76,7 @@ img.petite {
 	align-items: center;
 	margin: auto;
 	box-sizing: border-box;
+  width: 100%;
 }
 .footer {
 	display: flex;

@@ -67,7 +67,7 @@
 	display: flex;
 	flex-flow: wrap;
 	justify-content: center;
-	width: auto;
+	width: inherit;
 	position: relative;
 	padding-top: 35px;
 }

@@ -30,9 +30,14 @@
     font-size: 9vw !important;
   }
   h3.legend {
-    font-size: 16px !important;
+    font-size: 13px !important;
     top: 0px !important;
+    left: 10px !important;
   }
+  h3.special {
+    left: 10px !important;
+  }
+  #long {top: -10px !important}
 }
 
 h1{
@@ -85,8 +90,10 @@ h3{
 }
 h3.legend {
   position: absolute;
-  left: -20px;
+  left: 30px;
   top: -10px;
+  text-align: left;
+  opacity: 0.6;
 }
 h3.special {
   left:30px !important;
