@@ -10,18 +10,21 @@
 @media all and (max-width: 959px) and (min-width: 600px) {
 }
 @media all and (max-width: 599px) and (min-width: 50px) {
-  h2.activite {
-    width: 100% !important;
-    padding: 20px !important;
-    height: auto !important;
-  }
   h1 {
     padding-bottom: 20px !important;
     letter-spacing: 2px !important;
     font-size: 10vw !important;
   }
+  .contact h1 {
+    font-size:6vw !important;
+  }
   h2{
     font-size:14px !important;
+  }
+  h2.activite {
+    width: 100% !important;
+    padding: 20px !important;
+    height: auto !important;
   }
   .projets .intro p {
     width: 90vw !important;
@@ -37,7 +40,13 @@
   h3.special {
     left: 10px !important;
   }
+  h4 {
+    font-size: 14px !important;
+  }
   #long {top: -10px !important}
+  p {
+    font-size: 13px !important;
+  }
 }
 
 h1{
@@ -48,8 +57,9 @@ h1{
   font-family: 'Roboto Slab', serif;
   font-weight:500;
   letter-spacing:4px;
-  font-size: 9vw;
+  font-size: 8vw;
 }
+
 h2{
   font-size:20px;
   line-height:140%;
@@ -60,6 +70,9 @@ h2{
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
   letter-spacing:2px;
+}
+.intro h2 {
+  text-align: center;
 }
 h2.activite {
   width: 20%;
@@ -109,10 +122,13 @@ h4{
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
 }
+.footer h4 {
+  color: black;
+}
 p{
   line-height:130%;
   font-family: 'Droid Sans', sans-serif;
-  font-size:16px;
+  font-size:14px;
   color: white;
   font-weight:400;
   letter-spacing:2px;

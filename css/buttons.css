@@ -3,6 +3,11 @@
 		font-size: 20px !important;
 	}
 }
+@media all and (max-width: 599px) and (min-width: 50px) {
+	h2.activite a{
+		padding: 7px 0px !important;
+	}
+}
 a {
   text-decoration: none;
 }
@@ -20,7 +25,7 @@ a {
   color: black;
 }
 .title a:hover h3 {
-  color: var(--h0);
+  font-weight: bold;
 }
 
 .activites a {
@@ -29,15 +34,16 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+	padding: 7px 0px;
 }
-.activites a:hover{
+h2.activite:hover a{
   color: var(--y4);
 }
 
 .projets a:link, .projets a:active, .projets a:visited, .projets a{
   color:var(--h0);
 }
- .projets a:hover{
+.projets a:hover{
   color: var(--y3);
   font-weight: 500;
 }
@@ -49,13 +55,19 @@ a {
   font-size: 16px;
   letter-spacing:2px;
   text-transform: uppercase;
-  margin: 0px 7px;
+  margin: 5px 7px;
 }
-.project-button:hover {
-  font-weight: 300;
+.contact .project-button {
+  width: auto;
+  margin: 7px 0px;
+  background-color: white;
+}
+.project-button:hover a {
+  font-weight: bold;
 }
 .project-button a {
   padding: 0px 10px;
+	color: black;
 }
 .project-box:hover .project-button a {color: black;}
-.project-box:hover .project-button:hover a {background-color: black;}
+.project-box:hover .project-button:hover a {font-weight: bold;}
