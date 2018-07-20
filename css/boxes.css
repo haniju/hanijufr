@@ -38,7 +38,8 @@
 	overflow: hidden;
 }
 .projets {
-	height: 100%;
+	/*height: 100%;*/
+	overflow: auto;	
 }
 .intro, .outro {
 	display: flex;
@@ -46,14 +47,13 @@
 	align-items: center;
 	justify-content: center;
 	text-align: justify;
-	padding: 80px 40px;
-	width: 100%;
+	padding: 80px 0px;
+	width: 60%;
 	height: auto;
 	box-sizing: border-box;
 }
 .projets .intro {
 	height: auto;
-	text-align: center;
 }
 .projets .intro p {
 	width: 45vw;
@@ -118,7 +118,7 @@
 .project-button-i {
 	flex-basis: content;
 	padding: 0px 20px;
-	font-family: 'Droid Sans', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
 	font-weight: 100;
 	font-size: 14px;
 	letter-spacing:2px;

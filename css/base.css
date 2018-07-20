@@ -3,8 +3,8 @@
 @import "boxes.css";
 @import "specialColors.css";
 @import "media.css";
-@import url('https://fonts.googleapis.com/css?family=Droid+Sans:100,300,400,700');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,600');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
 
 :root {
   --y0: white;
@@ -28,6 +28,7 @@ body {
   justify-content: center;
   flex-direction: column;
   box-sizing: border-box;
+  overflow: hidden;
 }
 ::selection {
   background-color: var(--h0);
@@ -72,11 +73,14 @@ img.petite {
 .container{
 	display: flex/*block scroll fix*/;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 	margin: auto;
 	box-sizing: border-box;
   width: 100%;
+}
+.home .container {
+  justify-content: center;
 }
 .footer {
 	display: flex;

@@ -50,31 +50,57 @@
 }
 
 h1{
-  line-height:145%;
   margin: 0px;
   padding: 0px;
   color: white;
   font-family: 'Roboto Slab', serif;
-  font-weight:500;
   letter-spacing:4px;
-  font-size: 8vw;
+  font-size:4vw;
+  line-height:100%;
+  font-weight:300;
+  text-align: center;
 }
-
+.home h1 {
+  font-size: 8vw;
+  line-height:145%;
+  font-weight:500;
+}
+.contact h1 {
+  font-size: 3vw;
+  margin-bottom: 15px;
+}
 h2{
+  line-height:130%;
+  font-family: 'Titillium Web', sans-serif;
+  font-size:16px;
+  color: white;
+  font-weight:100;
+  letter-spacing:2px;
+  margin: 20px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+.home h2 {
+  margin: 0px 0px 0px 0px;
+}
+/*
+.intro h2 {
+  text-align: center;
+}*/
+
+
+
+h3{
   font-size:20px;
   line-height:140%;
   color: white;
-  font-family: 'Droid Sans', sans-serif;
-  font-weight: 200;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
   text-decoration: uppercase;
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
   letter-spacing:2px;
 }
-.intro h2 {
-  text-align: center;
-}
-h2.activite {
+h3.activite {
   width: 20%;
   height: auto;
   display: flex;
@@ -83,24 +109,6 @@ h2.activite {
   box-sizing: border-box;
   text-align: center;
 }
-h2.activite:hover {
-  background-color: black;
-}
-.projets h2 {
-  font-size:4vw;
-}
-h3{
-  font-size:20px;
-  line-height:140%;
-  text-align: center;
-  font-weight:100;
-  color: white;
-  font-family: 'Roboto Slab', serif;
-  letter-spacing:1.8px;
-  margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
-  text-transform: uppercase;
-}
 h3.legend {
   position: absolute;
   left: 30px;
@@ -108,16 +116,13 @@ h3.legend {
   text-align: left;
   opacity: 0.6;
 }
-h3.special {
-  left:30px !important;
-}
+
 h4{
   line-height:130%;
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-size:16px;
   color:white;
   font-weight:200;
-/*	-webkit-text-size-adjust:none;*/
   letter-spacing:2px;
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
@@ -125,10 +130,11 @@ h4{
 .footer h4 {
   color: black;
 }
+
 p{
   line-height:130%;
-  font-family: 'Droid Sans', sans-serif;
-  font-size:14px;
+  font-family: 'Titillium Web', sans-serif;
+  font-size:15px;
   color: white;
   font-weight:400;
   letter-spacing:2px;
@@ -145,15 +151,4 @@ p.dark{
   font-weight:200;
   font-size:13px;
   font-style: italic;
-}
-h5{
-  font-family: 'Roboto Slab', serif;
-  font-size:15px;
-  color:var(--b);
-  background-color: var(--y3);
-  margin: unset;
-  padding:20px 10px 20px 10px;
-  font-weight:500;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
 }
