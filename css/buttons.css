@@ -41,17 +41,6 @@ a {
 	padding: 7px 0px;
 	box-sizing: border-box;
 }
-h2.activite:hover a{
-  color: var(--y4);
-}
-
-.projets a:link, .projets a:active, .projets a:visited, .projets a{
-  color:var(--h0);
-}
-.projets a:hover{
-  color: var(--y3);
-  font-weight: 500;
-}
 
 .project-button {
   flex-basis: content;
@@ -62,17 +51,15 @@ h2.activite:hover a{
   text-transform: uppercase;
   margin: 5px 7px;
 }
-.contact .project-button {
-  width: auto;
-  margin: 7px 0px;
-  background-color: white;
-}
-.project-button:hover a {
-  font-weight: bold;
-}
 .project-button a {
   padding: 0px 10px;
 	color: black;
 }
 .project-box:hover .project-button a {color: black;}
 .project-box:hover .project-button:hover a {font-weight: bold;}
+
+.contact .project-button {
+  width: auto;
+  margin: 7px 0px;
+  background-color: white;
+}
