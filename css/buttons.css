@@ -7,7 +7,11 @@
 	h2.activite a{
 		padding: 7px 0px !important;
 	}
+	h3.activite {
+		width: 100% !important;
+	}
 }
+
 a {
   text-decoration: none;
 }
@@ -35,6 +39,7 @@ a {
   justify-content: center;
   align-items: center;
 	padding: 7px 0px;
+	box-sizing: border-box;
 }
 h2.activite:hover a{
   color: var(--y4);

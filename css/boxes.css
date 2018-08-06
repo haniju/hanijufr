@@ -14,6 +14,7 @@
 	.intro {
 		padding: 95px 25px 25px 25px !important;
 		height: auto !important;
+		width: 90vw !important;
 	}
 	.outro {
 		padding: 15px !important;
@@ -30,6 +31,9 @@
 		justify-content: flex-start !important;
 		height: auto !important;
 	}
+	.activites {
+		flex-direction: column !important;
+	}
 }
 
 .home {
@@ -39,7 +43,7 @@
 }
 .projets {
 	/*height: 100%;*/
-	overflow: auto;	
+	overflow: auto;
 }
 .intro, .outro {
 	display: flex;
