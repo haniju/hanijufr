@@ -23,6 +23,7 @@
 	.project-box {
 		width: 100% !important;
 		margin-bottom: 25px !important;
+		padding-bottom: 5px !important;
 	}
 	.dpP .project-box {
 		height: 440px;
@@ -33,6 +34,7 @@
 	}
 	.activites {
 		flex-direction: column !important;
+		margin-bottom: 40px;
 	}
 }
 
@@ -69,7 +71,7 @@
 	width: 100%;
 	height: auto;
 	display: flex;
-	flex-wrap: wrap;
+	/*flex-wrap: wrap; chrome fix*/
 	justify-content: center;
 	box-sizing: border-box;
 }
