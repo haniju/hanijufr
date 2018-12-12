@@ -21,7 +21,6 @@
 body {
   background-color: var(--y4);
   margin: auto;
-  height: 100vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -76,9 +75,6 @@ img.petite {
 	margin: auto;
 	box-sizing: border-box;
   width: 100%;
-}
-.home .container {
-  justify-content: center;
 }
 .footer {
 	display: flex;

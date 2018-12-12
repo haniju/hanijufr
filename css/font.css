@@ -5,7 +5,11 @@
   p.small{
     font-size:16px !important;
   }
-
+  .intro h2 {
+    margin: 50px 0px 0px 0px !important;
+    width: 30% !important;
+    text-align: left !important;
+  }
 }
 @media all and (max-width: 959px) and (min-width: 600px) {
 }
@@ -76,11 +80,11 @@ h2{
   color: white;
   font-weight:100;
   letter-spacing:2px;
-  margin: 20px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
+  margin: 40px 0px 0px 0px;
+  padding: 0px;
 }
 .home h2 {
-  margin: 0px 0px 0px 0px;
+  margin: 0px;
 }
 /*
 .intro h2 {

@@ -42,7 +42,7 @@
 	width:100%;
 	height:100vh;
 	overflow: hidden;
-	justify-content: center;
+	justify-content: center !important;
 }
 .projets {
 	/*height: 100%;*/

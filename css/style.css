@@ -14,29 +14,6 @@
 				--h5: #ad54ff;
 
 			}
-			/*:root {
-				--y0: #FCEE21;
-				--y1: #F4E620;
-				--y2: #EFE120;
-				--y3: #EADC20;
-				--b: #404040;
-			}*/
-		body{
-			/* page background */
-			background-color: var(--y4);
-			margin: auto;
-			height: 100vh;
-			/*width: 100vw;*/
-			display: flex;
-			justify-content: center;
-			flex-direction: column;
-			box-sizing: border-box;
-		}
-/*		h1 img{
-			max-width:100%;
-			height:auto !important;
-			vertical-align:bottom;
-		}*/
 
 		/*responsive layout*/
 		@media all and (min-width: 1300px) {
