@@ -88,6 +88,8 @@
 	width: inherit;
 	position: relative;
 	padding-top: 35px;
+	height: 100vh;
+	box-sizing: border-box;
 }
 .project-box {
 	display: flex;

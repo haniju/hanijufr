@@ -139,7 +139,7 @@ p{
   line-height:130%;
   font-family: 'Titillium Web', sans-serif;
   font-size:15px;
-  color: white;
+  color: var(--y0);
   font-weight:400;
   letter-spacing:2px;
   margin: 0px 0px 0px 0px;
