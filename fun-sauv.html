@@ -48,43 +48,29 @@
   })(jQuery);
   </script>
   <style>
-.tableau {
-  height:500px;
-  width:500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  box-sizing: border-box;
-  overflow: hidden;
-}
 .position {
   height: inherit;
   width: inherit;
   position: relative;
   display: inherit;
   flex-direction: inherit;
-  /*animation-name: rotate;*/
+  /*animation-name: rotate;
   animation-duration: 40s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: infinite;*/
 }
 .verti {
-  height: 300%;
-  width: 300%;
+  height: 100%;
+  width: 100%;
   position: absolute;
   display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
 }
 .hori {
-  width: 300%;
-  height: 300%;
+  width: 100%;
+  height: 100%;
   position: absolute;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
 }
 .rayure {
@@ -92,14 +78,14 @@
 }
 .verti .rayure {
   position: relative;
-  margin-right: 5%;
-  height: 300%;
-  width: 5%;
+  margin-right: 5vw;
+  height: 100%;
+  width: 5vw;
   animation-name: example;
   animation-duration: 4s;
   animation-iteration-count: infinite;
 }
-/*.verti .rayure::after {
+.verti .rayure::after {
   content: ' ';
   display: inline-block;
   position: absolute;
@@ -107,17 +93,17 @@
   height: 100%;
   width: 5vw;
   left: 10vw;
-}*/
+}
 .hori .rayure {
   position: relative;
-  margin-bottom: 3%;
-  width: 300%;
-  height: 5%;
+  margin-bottom: 5vw;
+  width: 100%;
+  height: 5vw;
   animation-name: example;
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
-/*.hori .rayure:after {
+.hori .rayure:after {
   content: ' ';
   display: inline-block;
   position: absolute;
@@ -125,7 +111,7 @@
   width: 100%;
   height: 5vw;
   top: 10vw;
-}*/
+}
 @keyframes rotate {
   0%   {transform: rotate(0deg);}
   100% {transform: rotate(360deg);}
@@ -139,7 +125,7 @@
 }
   </style>
 
-    <div class="tableau">
+    <div style="height:100%; width:100%;">
         <div class="hori">
           <div class="position">
             <div class="rayure"></div>
@@ -169,11 +155,65 @@
             <div class="rayure"></div>
             <div class="rayure"></div>
             <div class="rayure"></div>
-            <div class="rayure"></div>
-            <div class="rayure"></div>
           </div>
         </div>
     </div>
+
+    <!--div class="project-space">
+      <h3 class="legend"></h2>
+      <div class="media mCustomScrollbar">
+          <img class="item" src="images/fun/mofo.jpg">
+          <img class="item" src="images/fun/klub2016.jpg">
+          <img class="item" src="images/fun/Confluence - 2016.jpeg">
+          <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/_C81zLfcJ7M?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <img class="item" src="images/fun/naseaux.gif">
+          <img class="item" src="images/fun/oeil5.gif">
+          <img style="margin-right:30px;" class="item" src="images/fun/bouche_creepy.gif">
+          <img class="item" src="images/fun/zoomin.gif">
+          <img class="item" src="images/empty.png">
+      </div>
+    </div>
+
+      <div class="project-space">
+        <div class="project-box">
+          <div class="project-box-a">
+            <img src="images/logo_adf.svg" class="img-portfolio" style="height:80px;">
+            <p><br>"Dissémination de jouets hybrido-interactifs pour
+            manifestations festives"<br><br></p>
+            <p class="small">
+            Collectif pluri-diciplinaire. Installations vidéo, musicales et plastiques pour
+            l'univers des soirées.<br><br></p>
+          </div>
+
+          <div class="project-box-b">
+            <div class="project-button-i">
+              2014
+            </div>
+            <div class="project-button-i">
+              Co-fondatrice
+            </div>
+            <div class="project-button-i">
+              Mapping vidéo
+            </div>
+            <div class="project-button-i">
+              Scenographie
+            </div>
+            <div class="project-button-i">
+              Documentation
+            </div>
+          </div>
+          <div class="project-box-b">
+            <div class="project-button">
+              <a href="http://lesanimauxdufutur.net" target="_blank">Site web</a>
+            </div>
+            <div class="project-button">
+              <a href="https://www.facebook.com/animauxdufutur/" target="_blank">Page FB</a>
+            </div>
+          </div>
+        </div>
+
+      </div-->
+
 
 </body>
 </html>

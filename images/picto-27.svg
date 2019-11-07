@@ -1,0 +1,28 @@
+<svg id="CV-web" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.67 62.67">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-linejoin: round;
+        stroke-width: 1.97px;
+      }
+    </style>
+  </defs>
+  <title>picto</title>
+  <g id="Layer_7" data-name="Layer 7">
+    <g>
+      <g>
+        <rect class="cls-1" x="6.79" y="12.86" width="26.06" height="5.01"/>
+        <rect class="cls-1" x="21.61" y="21.07" width="21.4" height="6.42"/>
+        <rect class="cls-1" x="14.45" y="34.38" width="23.05" height="5.09"/>
+        <rect class="cls-1" x="20.09" y="46.27" width="23.05" height="5.09"/>
+      </g>
+      <rect class="cls-2" x="0.98" y="0.98" width="48.71" height="60.71" rx="8.5" ry="8.5"/>
+    </g>
+  </g>
+</svg>

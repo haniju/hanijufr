@@ -12,7 +12,7 @@
   <link rel="icon" type="image/png" href="images/fav.png">
   <link rel="stylesheet" type="text/css" href="css/base.css">
   <link rel="stylesheet" href="js/scroll/jquery.mCustomScrollbar.css"/>
-
+  <link rel="stylesheet" href="js/scroll/jquery.mCustomScrollbar.min.css"/>
   <meta name="description" content="Design de produit numerique">
   <meta name="keywords" content="design,paris,france,product,produit,digital,numerique,pédagogie,pedagogy,user-centered">
 
@@ -26,135 +26,77 @@
 </head>
 
 <body class="projets dpP">
-  <script>
-  (function($){
-    $(window).on("load",function(){
-      $(".mcs-horizontal-example").mCustomScrollbar({
-        axis:"x",
-        theme:"dark-3",
-        advanced:{
-          autoExpandHorizontalScroll:true
-        },
-        callbacks:{
-          onCreate:function(){
-            $(this).find(".item").css("width",$(this).width());
-          },
-          onBeforeUpdate:function(){
-            $(this).find(".item").css("width",$(this).width());
-          }
-        }
-      });
-    });
-  })(jQuery);
-  </script>
 
+  <a class="pictos cv" href="index.html">
+    <img src="images/picto-27-n.svg">
+  </a>
   <div class="title">
-    <a href="index.html">
-      <h3><---</h3>
-    </a>
-    <a href="contact.html">
-      <h3>Contact</h3>
-    </a>
+    <div class="couleurs">
+      <a class="toc" href="#ex1"><span class="point"></span><p>2012</p></a>
+      <a class="toc" href="#ex2"><span class="point"></span><p>2016</p></a>
+      <a class="toc" href="#ex3"><span class="point"></span><p>2017</p></a>
+      <a class="toc" href="#ex4"><span class="point"></span><p>2018</p></a>
+      <a class="toc" href="#ex5"><span class="point"></span><p>extra</p></a>
+    </div>
   </div>
+  <a class="pictos contact" href="contact.html">
+    <img src="images/picto-29-n.svg">
+  </a>
 
 	<div class="container projets">
-    <div class="intro">
-      <h1>Design et contenus pédagogiques</h1>
-      <h2>Nous vous conseillons pour la création de vos contenus de formation.
-        <br><br>Nous vous aidons à rendre vos informations plus accessibles et intelligibles,
-        au moyen d'illustrations pédagogiques (infographies, schémas, organigrammes...)
-        <br><br>Nous réfléchissons à vos côtés à la meilleure manière de donner plus de place à la pédagogie
-        en respectant les principes de design de vos produits</h2>
-    </div>
+    <div class="project-space">
+        <div class="vertical-images" >
+            <div class="bande" id="ex1">
+              <h1>2012</h1>
+              <div class="deco-port"></div>
+            </div>
+            <img class="item" src="images/portfolio/haniju_b1.png">
+            <img class="item" src="images/portfolio/haniju_b2.png">
+            <img class="item" src="images/portfolio/haniju_b3.png">
+            <img class="item" src="images/portfolio/haniju_b11.png">
+            <img class="item" src="images/portfolio/haniju_b12.png">
 
-      <div class="project-space">
-        <h3 class="legend">Nos réalisations :</h2>
-        <div class="media mCustomScrollbar">
-            <img class="item" src="images/dp/schemas-09.png">
-            <img class="item" src="images/dp/jerry_doc.png">
-            <img class="item" src="images/dp/jerry_drive.png">
-            <img class="item" src="images/dp/certificat.jpg">
-            <img class="item" src="images/dp/schemas-10.png">
-            <img class="item" src="images/dp/schemas-11.png">
-            <img class="item" src="images/dp/schemas-12.png">
-            <img class="item" src="images/dp/organigram.png">
-            <img class="item" src="images/empty.png">
+            <div class="bande" id="ex2">
+              <h1>2016</h1>
+              <div class="deco-port"></div>
+            </div>
+            <img class="item" src="images/portfolio/haniju_b4.png">
+            <img class="item" src="images/portfolio/haniju_b5.png">
+            <img class="item" src="images/portfolio/haniju_b7.png">
+            <img class="item" src="images/portfolio/haniju_b13.png">
+            <img class="item" src="images/portfolio/haniju_b10.png">
+            <img class="item" src="images/portfolio/haniju_b14.png">
+            <img class="item" src="images/portfolio/haniju_b15.png">
+            <img class="item" src="images/portfolio/haniju_b16.png">
+
+            <div class="bande" id="ex3">
+              <h1>2017</h1>
+              <div class="deco-port"></div>
+            </div>
+            <img class="item" src="images/portfolio/haniju_b9.png">
+            <img class="item" src="images/portfolio/haniju_b17.png">
+            <img class="item" src="images/portfolio/haniju_b18.png">
+
+            <div class="bande" id="ex4">
+              <h1>2018</h1>
+              <div class="deco-port"></div>
+            </div>
+            <img class="item" src="images/portfolio/haniju_b19.png">
+            <img class="item" src="images/portfolio/haniju_b21.png">
+            <img class="item" src="images/portfolio/haniju_b22.png">
+
+            <div class="bande" id="ex5">
+              <h1>extra</h1>
+              <div class="deco-port"></div>
+            </div>
+            <img class="item" src="images/portfolio/haniju_b20.png">
+            <img class="item" src="images/portfolio/haniju_b23.png">
+            <img class="item" src="images/portfolio/haniju_b24.png">
+            <img class="item" src="images/portfolio/haniju_b25.png">
         </div>
       </div>
 
-      <div class="project-space">
-        <h3 class="legend special">Et particulièrement :</h2>
 
-        <div class="project-box">
-          <div class="project-box-a">
-            <img src="images/logo_jerry.svg" class="img-portfolio">
-	          <p><br>"S'approprier l'informatique de milles & une façons !"<br><br></p>
-            <p class="small">Un ordinateur upcyclé + un ensemble de ressources pour un informatique plus
-              juste et intelligible + une communauté qui fait vivre cette belle idée dans ~10 pays<br><br></p>
-          </div>
-
-          <div class="project-box-b">
-            <div class="project-button-i">
-            2012 - Aujourd'hui
-            </div>
-            <div class="project-button-i">
-              Documentation
-            </div>
-            <div class="project-button-i">
-              Facilitation
-            </div>
-            <div class="project-button-i">
-              Design graphique - DA
-            </div>
-          </div>
-          <div class="project-box-b">
-            <div class="project-button">
-              <a href="youandjerrycan.org" target="_blank">Site web</a>
-            </div>
-            <div class="project-button">
-              <a href="http://www.adoptajerry.cc/" target="_blank">Adoptajerry.cc</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-box">
-          <div class="project-box-a">
-            <img src="images/logo_edtech.svg" class="img-portfolio">
-	          <p><br>"Alumni - Master des technologies de l'éducation (CRI)"<br><br></p>
-            <p class="small">Définir la pédagogie, ses principes, ses modalités
-              et sa place dans les objectifs du design<br><br></p>
-          </div>
-
-          <div class="project-box-b">
-            <div class="project-button-i">
-              2014 - 2016
-            </div>
-            <div class="project-button-i">
-            Apprendre en faisant
-            </div>
-            <div class="project-button-i">
-            Sciences cognitives
-            </div>
-            <div class="project-button-i">
-            Serious games
-            </div>
-            <div class="project-button-i">
-            Démarche scientifique
-            </div>
-
-          </div>
-          <div class="project-box-b">
-            <div class="project-button">
-              <a href="https://docs.google.com/document/d/10lOU609vBVRFW86JQjfRKddyABjBYv4wYLWnfS3Qnao/edit?usp=sharing" target="_blank">Note de master</a>
-            </div>
-            <div class="project-button">
-              <a href="https://cri-paris.org/" target="_blank">CRI Paris</a>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-    <script src="js/scroll/jquery.mCustomScrollbar.concat.min.js"></script>
-
  </body>
 </html>

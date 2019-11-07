@@ -10,26 +10,85 @@
 	h3.activite {
 		width: 100% !important;
 	}
+	a.portfolio img, a.contact img{width:40vw !important;}
+	a.cv img{width:10vw !important;}
+	a.portfolio, a.cv, a.contact {
+		margin: 3vw !important;
+	}
+	a.contact {
+		top: 1vw;
+		bottom: auto !important;
+	}
+	.projets a.contact {
+		top: 3vw;
+	}
+	a.toc {
+		flex-direction: column !important;
+	}
+	.point {
+		width: 20px !important;
+		height: 20px !important;
+		margin: 0px 15px !important;
+	}
 }
-
+button {
+	background-color: unset;
+	width: max-content;
+  border: none;
+  padding: 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px;
+  cursor: pointer;
+}
 a {
   text-decoration: none;
+	width: max-content;
 }
-.a:link,a:active,a:visited,a{
+.a.pictos:link, a.pictos:active, a.pictos:visited, a.pictos{
   color:unset;
 }
 
-.title a {
+.title a.pictos {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0px 7px;
+	flex-direction: column;
+  padding: 0px 20px;
+	margin: 20px 0px;
+}
+a.toc {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
-.title a:hover h3 {
-  font-weight: bold;
+a.toc:hover .point {
+	border: 1px solid white;
+}
+a:hover img{
+  margin-left: 2px;
+	margin-top: 2px;
 }
 
+a.cv img{width:3vw;}
+a.portfolio, a.cv {
+	position: fixed;
+	z-index: 3;
+	top: 1vw;
+	right: 1vw;
+}
+a.contact {
+	position: fixed;
+	z-index: 3;
+	bottom: 1vw;
+	left: 1vw;
+}
+a.portfolio img, a.contact img{width:11vw;}
+
+.contact a.pictos, .contact a.cv, .contact a.portfolio {
+	position: relative;
+	right: auto;
+}
 .activites a {
   width: 100%;
   height: 100%;

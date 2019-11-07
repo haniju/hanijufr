@@ -17,10 +17,17 @@
   h1 {
     padding-bottom: 20px !important;
     letter-spacing: 2px !important;
-    font-size: 10vw !important;
+    font-size: 7vw !important;
   }
+  .projets h1 {
+    padding-top: 20vw !important;
+    font-size: 20vw !important;
+}
   .contact h1 {
     font-size:6vw !important;
+  }
+  .home h1 {
+    text-align: left;
   }
   h2{
     font-size:14px !important;
@@ -29,6 +36,9 @@
     width: 100% !important;
     padding: 20px !important;
     height: auto !important;
+  }
+  .tag h2 {
+    margin: 2px 7px;
   }
   .projets .intro p {
     width: 90vw !important;
@@ -41,11 +51,16 @@
     top: 0px !important;
     left: 10px !important;
   }
-  h3.special {
-    left: 10px !important;
+  h3 {
+    font-size: 60px !important;
+    line-height: 100% !important;
+    margin: 50px 0px !important;
+    margin-top: 70px !important;
   }
   h4 {
-    font-size: 14px !important;
+    font-size: 27px !important;
+    animation: color-change 6s infinite;
+    margin-bottom: 80px !important;
   }
   #long {top: -10px !important}
   p {
@@ -57,22 +72,28 @@ h1{
   margin: 0px;
   padding: 0px;
   color: white;
-  font-family: 'Roboto Slab', serif;
-  letter-spacing:4px;
-  font-size:4vw;
+  font-family:'Titillium Web', sans-serif;
+  font-size:35px;
   line-height:100%;
-  font-weight:300;
+  font-weight:100;
+  letter-spacing: 1px;
   text-align: center;
 }
 .home h1 {
-  font-size: 8vw;
-  line-height:145%;
-  font-weight:500;
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  text-transform: uppercase;
+}
+.bande h1 {
+  color: black;
+  font-size: 7vw;
 }
 .contact h1 {
   font-size: 3vw;
   margin-bottom: 15px;
 }
+
 h2{
   line-height:130%;
   font-family: 'Titillium Web', sans-serif;
@@ -94,42 +115,45 @@ h2{
 
 
 h3{
-  font-size:20px;
+  font-size:80px;
   line-height:140%;
   color: white;
   font-family: 'Titillium Web', sans-serif;
-  font-weight: 300;
-  text-decoration: uppercase;
+  font-weight: 700;
+  text-transform: uppercase;
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
   letter-spacing:2px;
+  margin-left: 50px;
+  margin-bottom: 40px;
+  align-self: flex-start;
 }
-h3.activite {
-  width: 20%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  text-align: center;
-}
-h3.legend {
-  position: absolute;
-  left: 30px;
-  top: -10px;
-  text-align: left;
-  opacity: 0.6;
-}
+
+
 
 h4{
   line-height:130%;
   font-family: 'Titillium Web', sans-serif;
-  font-size:16px;
+  font-size:4vw;
   color:white;
   font-weight:200;
   letter-spacing:2px;
-  margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
+  margin: 0px;
+  margin-bottom:40px;
+  padding: 0px;
+}
+h4:hover, a.toc:hover p {
+  animation: color-change 6s infinite;
+  cursor: pointer;
+}
+@keyframes color-change {
+    0% { color: white; }
+    16% { color: var(--y0); }
+    32% { color: var(--h1); }
+    48% { color: var(--h2); }
+    62% { color: var(--h3); }
+    78% { color: var(--h4); }
+    100% { color: white; }
 }
 .footer h4 {
   color: black;
@@ -145,6 +169,10 @@ p{
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
 }
+.toc p {
+  color: black;
+}
+
 p.small{
   font-weight:200;
   font-size:13px;
