@@ -66,7 +66,7 @@ a.toc:hover .point {
 	border: 1px solid white;
 }
 
-.contact a.pictos, .contact a.cv, .contact a.portfolio {
+button.pictos, .contact a.pictos, .contact a.cv, .contact a.portfolio {
 	position: relative;
 	right: auto;
 }
@@ -83,15 +83,15 @@ a.portfolio, a.cv {
 	padding: 20px;
 	margin: 0px 5px;
 }
-a.contact {
+button.contact, a.contact {
 	position: fixed;
 	z-index: 15;
 	bottom: 1vw;
 	left: 1vw;
 }
 
-a.portfolio img, a.contact img{width:11vw;}
-a.cv img{width:3vw;}
+a.portfolio img, a.contact img, button.contact img {width:4vw;}
+a.cv img {width:3vw;}
 
 a.cv img {
 	transition: transform 300ms ease-in-out;
@@ -105,10 +105,10 @@ a.portfolio img {
 a.portfolio img:hover{
  transform: translateX(-10px) translateY(10px);
 }
-a.contact img {
+a.contact img, button.contact img {
 	transition: transform 300ms ease-in-out;
 }
-a.contact img:hover {
+a.contact img:hover, button.contact img:hover {
 	transform: translateX(10px) translateY(-10px);
 }
 

@@ -1,0 +1,17 @@
+<svg id="pictos" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.2 48.01">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linejoin: round;
+        stroke-width: 1.97px;
+      }
+    </style>
+  </defs>
+  <title>back</title>
+  <g>
+    <polyline class="cls-1" points="24.29 47.31 0.98 24 24.29 0.69"/>
+    <path class="cls-1" d="M5,28.09H43.22a4,4,0,0,0,4-4V23.92a4,4,0,0,0-4-4H5"/>
+  </g>
+</svg>
