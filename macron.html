@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--[if lte IE 7]> <html class="ie-lte7" dir="ltr"> <![endif]-->
+<!--[if lte IE 9]> <html class="ie-lte9" dir="ltr"> <![endif]-->
+<!--[if !IE]><!--> <html dir="ltr">             <!--<![endif]-->
+<html>
+
+<head>
+  <title>Haniju - Design de produits numeriques</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" type="image/png" href="images/fav.png">
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <link rel="stylesheet" type="text/css" href="css/macron.css">
+
+  <meta name="description" content="Design de produit numerique">
+  <meta name="keywords" content="design,paris,france,product,produit,digital,numerique,pédagogie,pedagogy,user-centered">
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="www.haniju.fr" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:title" content="Haniju Design" />
+  <meta property="og:description" content="Design de produit numerique" />
+  <meta property="og:site_name" content="Haniju Design" />
+  <meta property="og:image" content="images/blop.jpg" />
+</head>
+
+<body id="fond">
+  <a class="pictos portfolio" href="dp.html">
+    <img src="images/picto-28.svg">
+  </a>
+  <div class="title">
+
+
+  </div>
+  <a class="pictos contact" href="contact.html">
+    <img src="images/picto-29.svg">
+  </a>
+<div class="container-mac">
+  <div class="couleurs" onmouseover="fermee()" ontouchstart="fermee()">
+  </div>
+  <div class="macron">
+    <a onmouseover="int()" ontouchstart="int()"></a>
+    <img class="interieur" src="images/macron/0_cass.png">
+    <img class="interieur" src="images/macron/0_chouc.png">
+    <img id="dessus3" class="dessous" src="images/macron/1_bas.png">
+    <img id="dessus2" class="interieur" src="images/macron/1B_chouc.png">
+    <img id="dos" class="dessus" src="images/macron/2_crane.png">
+  </div>
+</div>
+
+  <script>
+  function int() {
+    document.getElementById("dos").style.transform = 'translateX(10px) rotate(50deg)';
+  }
+  function fermee() {
+    document.getElementById("dos").style.transform = 'translateY(0px) rotate(0deg)';
+  }
+  </script>
+</body>
+</html>

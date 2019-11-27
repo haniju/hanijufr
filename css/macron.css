@@ -1,0 +1,41 @@
+.couleurs {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+.container-mac{
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+	overflow: hidden;
+}
+.container-mac p {
+  color: black;
+  width: 50%;
+  margin-top: 100px;
+}
+.macron {
+	width: 65%;
+	height: 45%;
+	display: flex;
+	position: relative;
+}
+.macron a {
+	z-index:30;
+	width:100%;
+	height:100%;
+	position:absolute;
+}
+.dessus {
+	transition: transform 1s ease-in-out;
+}
+img.dessus, img.interieur, img.dessous {
+	width: 100%;
+}
+.dessus {display: flex; position: absolute;}
+.interieur {display: flex; position: absolute;}
+.dessous {display: flex; position: absolute;}

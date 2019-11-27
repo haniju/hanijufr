@@ -220,7 +220,7 @@ a:nth-child(5) .point{background-color: var(--h4);}
 	padding: 30px;
 }
 .contact-box .activites:first-of-type {align-self: center; margin-left:-50px;}
-.contact-box .activites:nth-of-type(2) {align-self: center; margin-left:335px;}
+.contact-box .activites:nth-of-type(2) {align-self: center; margin-left:335px; margin-top: 50px;}
 
 .contact-list {
 	display: flex;

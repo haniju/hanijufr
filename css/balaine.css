@@ -1,0 +1,30 @@
+.container-bal{
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container-bal p {
+  color: black;
+  width: 50%;
+  margin-top: 100px;
+}
+.balaine {
+	width: 45%;
+	height: 45%;
+	display: flex;
+	position: relative;
+}
+.dessus, .interieur, .dessous {transition: transform 3s ease-in-out;}
+
+img.dessus, img.interieur, img.dessous {width: 100%;}
+
+.dessus {display: flex; position: absolute;}
+.interieur {display: flex; position: absolute;}
+.dessous {display: flex; position: absolute;}
+
+a.dessus .dessus:hover{
+	transform: translateY(-30px) !important;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--[if lte IE 7]> <html class="ie-lte7" dir="ltr"> <![endif]-->
+<!--[if lte IE 9]> <html class="ie-lte9" dir="ltr"> <![endif]-->
+<!--[if !IE]><!--> <html dir="ltr">             <!--<![endif]-->
+<html>
+
+<head>
+  <title>Haniju - Design de produits numeriques</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" type="image/png" href="images/fav.png">
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <link rel="stylesheet" type="text/css" href="css/balaine.css">
+
+  <meta name="description" content="Design de produit numerique">
+  <meta name="keywords" content="design,paris,france,product,produit,digital,numerique,pédagogie,pedagogy,user-centered">
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="www.haniju.fr" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:title" content="Haniju Design" />
+  <meta property="og:description" content="Design de produit numerique" />
+  <meta property="og:site_name" content="Haniju Design" />
+  <meta property="og:image" content="images/blop.jpg" />
+</head>
+
+<body id="fond">
+  <a class="pictos portfolio" href="dp.html">
+    <img src="images/picto-28.svg">
+  </a>
+  <div class="title">
+    <div class="couleurs" id="fond-couleur">
+      <a id="id2" onmouseover="int()" ontouchstart="int()"><span class="point"></span></a>
+      <a id="id3" onmouseover="fermee()" ontouchstart="fermee()"><span class="point"></span></a>
+    </div>
+  </div>
+  <a class="pictos contact" href="contact.html">
+    <img src="images/picto-29.svg">
+  </a>
+  <div class="container-bal">
+    <div class="balaine">
+      <img id="dos2" class="dessus" src="images/svg/7_dos-int.png">
+      <img id="dessous2" class="dessous" src="images/svg/6_ventre-int.png">
+      <img id="" class="interieur" src="images/svg/5_interieur.png">
+      <img id="dos3" class="dessus" src="images/svg/4_dos-bouche.png">
+      <img id="dessous" class="dessous" src="images/svg/3_ventre-ext.png">
+      <img id="" class="interieur" src="images/svg/2_interieur-d.png">
+      <img id="dos" class="dessus" src="images/svg/1_dos.png">
+    </div>
+    <p>
+      L'orque, à l'instar du grand cachalot, est un superprédateur.
+      Au sommet de la chaîne alimentaire, elle ne connaît aucun ennemi naturel.
+    </p>
+  </div>
+  <script>
+  function int() {
+    document.getElementById("dos").style.transform = 'translateY(-110px)';
+    document.getElementById("dos2").style.transform = 'translateY(-110px)';
+    document.getElementById("dos3").style.transform = 'translateY(-110px)';
+    document.getElementById("dessous").style.transform = 'translateY(60px)';
+    document.getElementById("dessous2").style.transform = 'translateY(60px)';
+  }
+  function fermee() {
+    document.getElementById("dos").style.transform = 'translateY(0px)';
+    document.getElementById("dos2").style.transform = 'translateY(0px)';
+    document.getElementById("dos3").style.transform = 'translateY(0px)';
+    document.getElementById("dessous").style.transform = 'translateY(0px)';
+    document.getElementById("dessous2").style.transform = 'translateY(0px)';
+  }
+  </script>
+</body>
+</html>

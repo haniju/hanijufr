@@ -132,6 +132,18 @@ a.contact img:hover {
   margin: 5px 7px;
 	background-color: white;
 }
+.project-button a:hover {
+	animation: color-change-b 6s infinite;
+}
+@keyframes color-change-b {
+    0% { background-color: white; }
+    16% { background-color: var(--y0); }
+    32% { background-color: var(--h1); }
+    48% { background-color: var(--h2); }
+    62% { background-color: var(--h3); }
+    78% { background-color: var(--h4); }
+    100% { background-color: white; }
+}
 .project-button a {
   padding: 0px 10px;
 	color: black;
