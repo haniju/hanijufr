@@ -58,16 +58,16 @@
   </a>
 <div class="container-mac container-hr">
   <div class="couleurs slider" id="fond-couleur">
-    <a onmouseover="hover(h-r_blm-t,tete)" ontouchstart=""><span class="point"></span></a>
-    <a onmouseover="hover(h-r_ms-t,tete)" ontouchstart=""><span class="point"></span></a>
-    <a onmouseover="hover(h-r_cc-t,tete)" ontouchstart=""><span class="point"></span></a>
-    <a onmouseover="hover(h-r_nb-t,tete)" ontouchstart=""><span class="point"></span></a>
-    <a onmouseover="hover(h-r_bm-t,tete)" ontouchstart=""><span class="point"></span></a>
-    <a onmouseover="hover(h-r_jmb-t,tete)" ontouchstart=""><span class="point"></span></a>
-    <a onmouseover="hover(h-r_glg-t,tete)" ontouchstart=""><span class="point"></span></a>
-    <a onmouseover="hover(h-r_mp-t,tete)" ontouchstart=""><span class="point"></span></a>
-    <a onmouseover="hover(h-r_em-t,tete)" ontouchstart=""><span class="point"></span></a>
-    <a onmouseover="hover(h-r_eb-t,tete)" ontouchstart=""><span class="point"></span></a>
+    <a onmouseover="hover('tete','h-r_blm-t')" ontouchstart=""><span class="point"></span></a>
+    <a onmouseover="hover('tete','h-r_ms-t')" ontouchstart=""><span class="point"></span></a>
+    <a onmouseover="hover('tete','h-r_cc-t')" ontouchstart=""><span class="point"></span></a>
+    <a onmouseover="hover('tete','h-r_nb-t')" ontouchstart=""><span class="point"></span></a>
+    <a onmouseover="hover('tete','h-r_bm-t')" ontouchstart=""><span class="point"></span></a>
+    <a onmouseover="hover('tete','h-r_jmb-t')" ontouchstart=""><span class="point"></span></a>
+    <a onmouseover="hover('tete','h-r_glg-t')" ontouchstart=""><span class="point"></span></a>
+    <a onmouseover="hover('tete','h-r_mp-t')" ontouchstart=""><span class="point"></span></a>
+    <a onmouseover="hover('tete','h-r_em-t')" ontouchstart=""><span class="point"></span></a>
+    <a onmouseover="hover('tete','h-r_eb-t')" ontouchstart=""><span class="point"></span></a>
   </div>
   <div class="head-remix">
     <img id="h-r_blm-t" class="tete" src="images/head-remix/h-r_blm-t.png">
@@ -93,21 +93,21 @@
     <img id="h-r_eb-c" class="corps" src="images/head-remix/h-r_eb-c.png">
   </div>
   <div class="couleurs slider" id="fond-couleur">
-    <a onmouseover="hover(h-r_blm-t,corps)" ontouchstart=""><span class="point"></span></a>
-    <a onmouseover="hover(h-r_ms-t,corps)" ontouchstart=""><span class="point"></span></a>
-    <a onmouseover="hover(h-r_cc-t,corps)" ontouchstart=""><span class="point"></span></a>
-    <a onmouseover="hover(h-r_nb-t,corps)" ontouchstart=""><span class="point"></span></a>
-    <a onmouseover="hover(h-r_bm-t,corps)" ontouchstart=""><span class="point"></span></a>
-    <a onmouseover="hover(h-r_jmb-t,corps)" ontouchstart=""><span class="point"></span></a>
-    <a onmouseover="hover(h-r_glg-t,corps)" ontouchstart=""><span class="point"></span></a>
-    <a onmouseover="hover(h-r_mp-t,corps)" ontouchstart=""><span class="point"></span></a>
-    <a onmouseover="hover(h-r_em-t,corps)" ontouchstart=""><span class="point"></span></a>
-    <a onmouseover="hover(h-r_eb-t,corps)" ontouchstart=""><span class="point"></span></a>
+    <a onmouseover="hover('corps','h-r_blm-c')" ontouchstart=""><span class="point"></span></a>
+    <a onmouseover="hover('corps','h-r_ms-c')" ontouchstart=""><span class="point"></span></a>
+    <a onmouseover="hover('corps','h-r_cc-c')" ontouchstart=""><span class="point"></span></a>
+    <a onmouseover="hover('corps','h-r_nb-c')" ontouchstart=""><span class="point"></span></a>
+    <a onmouseover="hover('corps','h-r_bm-c')" ontouchstart=""><span class="point"></span></a>
+    <a onmouseover="hover('corps','h-r_jmb-c')" ontouchstart=""><span class="point"></span></a>
+    <a onmouseover="hover('corps','h-r_glg-c')" ontouchstart=""><span class="point"></span></a>
+    <a onmouseover="hover('corps','h-r_mp-c')" ontouchstart=""><span class="point"></span></a>
+    <a onmouseover="hover('corps','h-r_em-c')" ontouchstart=""><span class="point"></span></a>
+    <a onmouseover="hover('corps','h-r_eb-c')" ontouchstart=""><span class="point"></span></a>
   </div>
 </div>
 
-  <script>
-  var hover = function(pId, pClass){
+  <script type="text/javascript">
+  hover = function(pClass,pId){
       var tabImage = document.getElementsByClassName(pClass);
       for (var i = tabImage.length - 1; i >= 0; i--) {
           tabImage[i].style.display = "none";
