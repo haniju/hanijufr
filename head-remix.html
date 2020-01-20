@@ -24,12 +24,15 @@
   <meta property="og:image" content="images/blop.jpg" />
 </head>
 <style>
+body {
+  background-color: var(--y1);
+}
 .container-hr {
   flex-direction: row !important;
 }
 .head-remix {
   height: 100%;
-  width: 100%;
+  width: 60%;
   display: flex;
   justify-content: center;
   position: relative;
@@ -43,10 +46,36 @@
   position: relative !important;
   width: auto !important;
   height: auto !important;
+  z-index: 10;
+}
+a:nth-child(odd) .point{background-color: var(--y1);}
+a:nth-child(even) .point{background-color: var(--y4);}
+@media all and (max-width: 599px) and (min-width: 50px) {
+  .container-hr {
+    flex-direction: column !important;
+  }
+  .head-remix {
+    width: 100%;
+  }
+  .slider {
+    padding: 0px;
+    position: absolute !important;
+    bottom: 35px;
+    background-color: unset;
+  }
+  .slider:nth-child(1){
+    bottom: 5px;
+  }
+  .point {
+    margin: 0px 5px !important;
+  }
+  a {
+    height: 22px;
+  }
 }
 </style>
-<body id="fond">
-  <a class="pictos portfolio" href="dp.html">
+<body>
+  <!--a class="pictos portfolio" href="dp.html">
     <img src="images/picto-28.svg">
   </a>
   <div class="title">
@@ -55,7 +84,7 @@
   </div>
   <a class="pictos contact" href="contact.html">
     <img src="images/picto-29.svg">
-  </a>
+  </a-->
 <div class="container-mac container-hr">
   <div class="couleurs slider" id="fond-couleur">
     <a onmouseover="hover('tete','h-r_blm-t')" ontouchstart=""><span class="point"></span></a>
