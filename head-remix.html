@@ -27,6 +27,11 @@
 body {
   background-color: var(--y1);
 }
+img.fond {
+  position:absolute;
+  width:100%;
+  z-index:-5
+}
 .container-hr {
   flex-direction: content;
   display: flex;
@@ -42,18 +47,26 @@ body {
   display: flex;
   width: 100%;
   height: 5%;
+  margin-left: 100px;
+}
+.hr-title h1 {
+  font-weight: 300;
+  color: black;
+  text-align: left;
+  font-size: 50px;
 }
 .hr-content {
   display: flex;
   justify-content: flex-end;
   width: 100%;
-  height: 60%;
+  height: 75%;
   margin-right: 35%;
+  position: relative;
 }
 .hr-caption {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   width: max-content;
   height: max-content;
   background-color: #f4eded;
@@ -64,7 +77,7 @@ body {
   box-shadow: 3px 0px 7px rgb(140, 130, 79)
 }
 .hr-caption h1 {
-  font-size: 25px;
+  font-size: 22px;
   color: black !important;
 }
 .head-remix {
@@ -75,9 +88,11 @@ body {
   position: relative;
 }
 .head-remix img {
-  height: 80%;
+  height: 100%;
   position: absolute;
-  display: flex;
+}
+img.handb {
+  display: none;
 }
 .slider {
   position: relative !important;
@@ -88,11 +103,22 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+.arrow- {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.arrow-:hover i {
+  border-color: white;
+}
 i {
   border: solid black;
   display: inline-block;
   padding: 3px;
   position: absolute;
+  width: 10px;
+  height: 10px;
+  border-width: 0 5px 5px 0;
 }
 .right {
   transform: rotate(-45deg);
@@ -101,45 +127,87 @@ i {
 .left {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
+}
+.left- {
   right: 0px;
 }
 .top {
   position: absolute;
-  top: 20%;
-  width: 10px;
-  height: 10px;
-  border-width: 0 5px 5px 0;
+  top: 30%;
 }
 .bottom {
+  bottom: 35%;
   position: absolute;
-  bottom: 30%;
-  width: 20px;
-  height: 20px;
-  border-width: 0 6px 6px 0;
 }
 a:nth-child(odd) .point{background-color: var(--y1);}
 a:nth-child(even) .point{background-color: var(--y4);}
+@keyframes blink {
+  from {
+    color: white;
+  }
+
+  to {
+    color: black;
+  }
+}
+
+div {
+  animation-duration: 0.1s;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
 @media all and (max-width: 599px) and (min-width: 50px) {
+  h1 {
+    padding-bottom: 5px !important;
+  }
+  img.fond {
+    width: auto;
+    height: 100% !important;
+  }
   .container-hr {
     flex-direction: column !important;
+  }
+  .hr-content {
+    margin-right: 0px;
+    height: 60%;
   }
   .head-remix {
     width: 100%;
   }
   .slider {
     padding: 0px;
-    position: absolute !important;
-    bottom: 60px;
     background-color: unset;
+    width: 10px !important;
+    height: 100% !important;
   }
   .slider:nth-child(1){
     bottom: 10px;
   }
-  .point {
-    margin: 10px 5px !important;
+  .couleurs:nth-of-type(2){
+    right: 40px;
+  }
+  .top {
+    top: 40%;
+  }
+  .right {
+    right: 60px;
+  }
+  .left {
+    left: 80px;
+  }
+  .bottom {
+    border-color: white;
   }
   a {
     height: 42px;
+  }
+  .hr-caption {
+    margin-right: 12%;
+    margin-top: -10%;
+  }
+  .hr-caption h1 {
+    font-size: 22px !important;
   }
 }
 </style>
@@ -155,89 +223,69 @@ a:nth-child(even) .point{background-color: var(--y4);}
     <img src="images/picto-29.svg">
   </a-->
 <div class="container-hr">
-  <img style="position:absolute; width:100%; z-index:-5" src="images/head-remix/fond.png">
+  <img class="fond" src="images/head-remix/fond2.png">
   <div class="hr-title">
-    <h1>Le mélangeur créatif</h1>
+    <h1>Le mélangeur <br>de sinistres</h1>
   </div>
   <div class="hr-content">
     <div class="couleurs slider" id="fond-couleur">
-      <i class="arrow left top"></i>
-      <i class="arrow left bottom"></i>
-      <!--a onmouseover="hover('tete','h-r_blm-t')" ontouchstart="hover('tete','h-r_blm-t')"><span class="point"></span></a>
-      <a onmouseover="hover('tete','h-r_ms-t')" ontouchstart="hover('tete','h-r_ms-t')"><span class="point"></span></a>
-      <a onmouseover="hover('tete','h-r_cc-t')" ontouchstart="hover('tete','h-r_cc-t')"><span class="point"></span></a>
-      <a onmouseover="hover('tete','h-r_nb-t')" ontouchstart="hover('tete','h-r_nb-t')"><span class="point"></span></a>
-      <a onmouseover="hover('tete','h-r_bm-t')" ontouchstart="hover('tete','h-r_bm-t')"><span class="point"></span></a>
-      <a onmouseover="hover('tete','h-r_jmb-t')" ontouchstart="hover('tete','h-r_jmb-t')"><span class="point"></span></a>
-      <a onmouseover="hover('tete','h-r_glg-t')" ontouchstart="hover('tete','h-r_glg-t')"><span class="point"></span></a>
-      <a onmouseover="hover('tete','h-r_mp-t')" ontouchstart="hover('tete','h-r_mp-t')"><span class="point"></span></a>
-      <a onmouseover="hover('tete','h-r_em-t')" ontouchstart="hover('tete','h-r_em-t')"><span class="point"></span></a>
-      <a onmouseover="hover('tete','h-r_eb-t')" ontouchstart="hover('tete','h-r_eb-t')"><span class="point"></span></a-->
+      <div class="arrow- top left-"><i onclick="fleche('tete', -1)" class="arrow left"></i></div>
+      <div class="arrow- bottom left-"><i onclick="fleche('corps', -1)" class="arrow left"></i></div>
     </div>
     <div class="head-remix">
-      <img id="h-r_blm-t" class="tete" src="images/head-remix/guillaume.png">
-      <img id="h-r_ms-t" class="tete" src="images/head-remix/vidal.png">
-      <img id="h-r_cc-t" class="tete" src="images/head-remix/parly.png">
-      <img id="h-r_nb-t" class="tete" src="images/head-remix/riester.png">
-      <img id="h-r_bm-t" class="tete" src="images/head-remix/darmanin.png">
-      <img id="h-r_jmb-t" class="tete" src="images/head-remix/gourault.png">
-      <img id="h-r_glg-t" class="tete" src="images/head-remix/le drian.png">
-      <img id="h-r_mp-t" class="tete" src="images/head-remix/buzyn.png">
-      <img id="h-r_em-t" class="tete" src="images/head-remix/macron.png">
-      <img id="h-r_eb-t" class="tete" src="images/head-remix/borne.png">
+      <img class="tete handb" alt="Guillaume" src="images/head-remix/guillaume.png">
+      <img class="tete handb" alt="Vidal" src="images/head-remix/vidal.png">
+      <img class="tete handb" alt="Parly" src="images/head-remix/parly.png">
+      <img class="tete handb" alt="Riester" src="images/head-remix/riester.png">
+      <img class="tete handb" alt="Darmanin" src="images/head-remix/darmanin.png">
+      <img class="tete handb" alt="Gourault" src="images/head-remix/gourault.png">
+      <img class="tete handb" alt="Le Drian" src="images/head-remix/le drian.png">
+      <img class="tete handb" alt="Buzyn" src="images/head-remix/buzyn.png">
+      <img class="tete handb" alt="Le Maire" src="images/head-remix/le maire.png">
+      <img class="tete handb" alt="Schiapp" src="images/head-remix/schiappa.png">
+      <img class="tete handb" alt="Castaner" src="images/head-remix/castaner.png">
+      <img class="tete handb" alt="Belloubet" src="images/head-remix/belloubet.png">
+      <img class="tete" alt="Macron" src="images/head-remix/maacron.png">
+      <img class="tete handb" alt="Blanquer" src="images/head-remix/blanquer.png">
+      <img class="tete handb" alt="Le Gendre" src="images/head-remix/le gendre.png">
+      <img class="tete handb" alt="Penicaud" src="images/head-remix/penicaud.png">
+      <img class="tete handb" alt="Macron" src="images/head-remix/macron.png">
+      <img class="tete handb" alt="Borne" src="images/head-remix/borne.png">
+      <img class="tete handb" alt="Borne" src="images/head-remix/philippe.png">
+      <img class="tete handb" alt="Tatcher" src="images/head-remix/tatcher.png">
+      <img class="tete handb" alt="Benalla" src="images/head-remix/benalla.png">
 
-      <img id="h-r_blm-c" class="corps" src="images/head-remix/didier.png">
-      <img id="h-r_ms-c" class="corps" src="images/head-remix/frederique.png">
-      <img id="h-r_cc-c" class="corps" src="images/head-remix/florence.png">
-      <img id="h-r_nb-c" class="corps" src="images/head-remix/franck.png">
-      <img id="h-r_bm-c" class="corps" src="images/head-remix/gerald.png">
-      <img id="h-r_jmb-c" class="corps" src="images/head-remix/jacqueline.png">
-      <img id="h-r_glg-c" class="corps" src="images/head-remix/jean-yves.png">
-      <img id="h-r_mp-c" class="corps" src="images/head-remix/agnès.png">
-      <img id="h-r_em-c" class="corps" src="images/head-remix/emanuel.png">
-      <img id="h-r_eb-c" class="corps" src="images/head-remix/elisabeth.png">
+      <img class="corps handb" alt="Didier" src="images/head-remix/didier.png">
+      <img class="corps handb" alt="Frederique" src="images/head-remix/frederique.png">
+      <img class="corps handb" alt="Florence" src="images/head-remix/florence.png">
+      <img class="corps handb" alt="Franck" src="images/head-remix/franck.png">
+      <img class="corps handb" alt="Gerald" src="images/head-remix/gerald.png">
+      <img class="corps handb" alt="Jacqueline" src="images/head-remix/jacqueline.png">
+      <img class="corps handb" alt="Jean-Yves" src="images/head-remix/jean-yves.png">
+      <img class="corps handb" alt="Agnès" src="images/head-remix/agnès.png">
+      <img class="corps" alt="Emanuel" src="images/head-remix/emanuel.png">
+      <img class="corps handb" alt="Elisabeth" src="images/head-remix/elisabeth.png">
+      <img class="corps handb" alt="Bruno" src="images/head-remix/bruno.png">
+      <img class="corps handb" alt="Marlene" src="images/head-remix/marlene.png">
+      <img class="corps handb" alt="Cristophe" src="images/head-remix/cristophe.png">
+      <img class="corps handb" alt="Nicole" src="images/head-remix/nicole.png">
+      <img class="corps handb" alt="Brigitte" src="images/head-remix/brigitte.png">
+      <img class="corps handb" alt="Jean-Michel" src="images/head-remix/jean-michel.png">
+      <img class="corps handb" alt="Gilles" src="images/head-remix/gilles.png">
+      <img class="corps handb" alt="Murielle" src="images/head-remix/murielle.png">
+      <img class="corps handb" alt="Edouard" src="images/head-remix/edouard.png">
+      <img class="corps handb" alt="Margaret" src="images/head-remix/margaret.png">
 
-      <!--<img id="h-r_blm-t" class="tete" src="images/head-remix/le maire.png">
-      <img id="h-r_ms-t" class="tete" src="images/head-remix/schiappa.png">
-      <img id="h-r_cc-t" class="tete" src="images/head-remix/castaner.png">
-      <img id="h-r_nb-t" class="tete" src="images/head-remix/belloubet.png">
-      <img id="h-r_bm-t" class="tete" src="images/head-remix/maacron.png">
-      <img id="h-r_jmb-t" class="tete" src="images/head-remix/blanquer.png">
-      <img id="h-r_glg-t" class="tete" src="images/head-remix/le gendre.png">
-      <img id="h-r_mp-t" class="tete" src="images/head-remix/penicaud.png">
-      <img id="h-r_em-t" class="tete" src="images/head-remix/macron.png">
-      <img id="h-r_eb-t" class="tete" src="images/head-remix/borne.png">
-
-      <img id="h-r_blm-c" class="corps" src="images/head-remix/bruno.png">
-      <img id="h-r_ms-c" class="corps" src="images/head-remix/marlene.png">
-      <img id="h-r_cc-c" class="corps" src="images/head-remix/cristophe.png">
-      <img id="h-r_nb-c" class="corps" src="images/head-remix/nicole.png">
-      <img id="h-r_bm-c" class="corps" src="images/head-remix/brigitte.png">
-      <img id="h-r_jmb-c" class="corps" src="images/head-remix/jean-michel.png">
-      <img id="h-r_glg-c" class="corps" src="images/head-remix/gilles.png">
-      <img id="h-r_mp-c" class="corps" src="images/head-remix/murielle.png">
-      <img id="h-r_em-c" class="corps" src="images/head-remix/emanuel.png">
-      <img id="h-r_eb-c" class="corps" src="images/head-remix/elisabeth.png">-->
-      <img style="height:135%; top:-105px;" src="images/head-remix/cadre.png">
+      <img src="images/head-remix/cadre.png">
     </div>
     <div class="couleurs slider" id="fond-couleur">
-      <i class="arrow right top"></i>
-      <i class="arrow right bottom"></i>
-      <!--a onmouseover="hover('corps','h-r_blm-c')" ontouchstart="hover('corps','h-r_blm-c')"><span class="point"></span></a>
-      <a onmouseover="hover('corps','h-r_ms-c')" ontouchstart="hover('corps','h-r_ms-c')"><span class="point"></span></a>
-      <a onmouseover="hover('corps','h-r_cc-c')" ontouchstart="hover('corps','h-r_cc-c')"><span class="point"></span></a>
-      <a onmouseover="hover('corps','h-r_nb-c')" ontouchstart="hover('corps','h-r_nb-c')"><span class="point"></span></a>
-      <a onmouseover="hover('corps','h-r_bm-c')" ontouchstart="hover('corps','h-r_bm-c')"><span class="point"></span></a>
-      <a onmouseover="hover('corps','h-r_jmb-c')" ontouchstart="hover('corps','h-r_jmb-c')"><span class="point"></span></a>
-      <a onmouseover="hover('corps','h-r_glg-c')" ontouchstart="hover('corps','h-r_glg-c')"><span class="point"></span></a>
-      <a onmouseover="hover('corps','h-r_mp-c')" ontouchstart="hover('corps','h-r_mp-c')"><span class="point"></span></a>
-      <a onmouseover="hover('corps','h-r_em-c')" ontouchstart="hover('corps','h-r_em-c')"><span class="point"></span></a>
-      <a onmouseover="hover('corps','h-r_eb-c')" ontouchstart="hover('corps','h-r_eb-c')"><span class="point"></span></a-->
+      <div class="arrow- top right-"><i onclick="fleche('tete',1)" class="arrow right"></i></div>
+      <div class="arrow- bottom right-"><i onclick="fleche('corps',1)" class="arrow right"></i></div>
     </div>
   </div>
   <div class="hr-caption">
-    <h1>Élisabeth</h1>
-    <h1>Borne</h1>
+    <h1 id="corpstxt">Emanuel</h1>
+    <h1 id="tetetxt">Macron</h1>
   </div>
 </div>
 
@@ -250,6 +298,18 @@ a:nth-child(even) .point{background-color: var(--y4);}
       var elem = document.getElementById(pId);
       elem.style.display = "initial";
   }
+  var compteur = {"tete" : 0 , "corps" : 0};
+  function fleche(pClass,pSens){
+      var tabImage = document.getElementsByClassName(pClass);
+      var lLength = tabImage.length;
+      compteur[pClass] = (compteur[pClass] + lLength  + pSens) % lLength ;
+      for (var i = lLength - 1; i >= 0; i--) {
+          tabImage[i].style.display = (i == compteur[pClass] ? "initial" : "none");
+      }
+      var elem = document.getElementById(pClass + "txt");
+          elem.innerHTML = tabImage[compteur[pClass]].alt;
+      }
+
   </script>
 </body>
 </html>

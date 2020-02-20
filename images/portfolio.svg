@@ -1,22 +1,24 @@
-<svg id="pictos" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90.16 43.17">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: none;
-        stroke: #fff;
-        stroke-linejoin: round;
-        stroke-width: 1.97px;
-      }
-
-      .cls-2 {
-        fill: #fff;
-      }
-    </style>
-  </defs>
-  <title>pictos</title>
-  <g>
-    <path class="cls-1" d="M67.44,21.21a22.34,22.34,0,0,0-10.52-19,56.16,56.16,0,0,0-23.68,0,22.36,22.36,0,0,0,1.85,39,53.65,53.65,0,0,0,10,1,53.65,53.65,0,0,0,10-1A22.36,22.36,0,0,0,67.44,21.21Z"/>
-    <circle class="cls-2" cx="45.08" cy="21.21" r="8.61"/>
-    <path class="cls-1" d="M88,18.32a4.17,4.17,0,0,1,0,5.79c-6.29,6.51-23.14,18.08-42.93,18.08S8.44,30.62,2.15,24.11a4.17,4.17,0,0,1,0-5.79C8.44,11.81,25.29,1,45.08,1S81.71,11.81,88,18.32Z"/>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="pictos" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 65.7 44.6" style="enable-background:new 0 0 65.7 44.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;fill:#009F1B;stroke:#FFFFFF;stroke-width:1.966;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{display:none;fill:#C2C2C2;}
+	.st2{fill:none;stroke:#FFFFFF;stroke-width:1.966;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#FFFFFF;stroke-width:1.966;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#FFFFFF;stroke-width:1.966;stroke-linecap:round;stroke-miterlimit:10;}
+	.st5{fill:#FFFFFF;}
+	.st6{fill:none;stroke:#FFFFFF;stroke-width:1.966;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st7{fill:none;stroke:#000000;stroke-width:1.966;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st8{fill:none;stroke:#000000;stroke-width:1.966;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<rect x="-366.4" y="-516.9" class="st1" width="1278.5" height="797.1"/>
+<g>
+	<path class="st2" d="M47.8,22c0-5.4-2.8-10.1-7.1-12.7c-2.5-0.5-5.2-0.8-7.9-0.8c-2.7,0-5.4,0.3-7.9,0.8c-4.2,2.7-7.1,7.4-7.1,12.7
+		c0,5.9,3.4,11,8.3,13.4c2.2,0.4,4.4,0.6,6.7,0.6s4.5-0.2,6.7-0.6C44.5,33,47.8,27.9,47.8,22z"/>
+	<circle class="st5" cx="32.8" cy="22" r="5.8"/>
+	<path class="st2" d="M61.6,20.1c1,1.1,1,2.8,0,3.9c-4.2,4.4-15.5,12.1-28.8,12.1S8.3,28.4,4,24c-1-1.1-1-2.8,0-3.9
+		C8.3,15.7,19.6,8.5,32.8,8.5S57.4,15.7,61.6,20.1z"/>
+</g>
 </svg>

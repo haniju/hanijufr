@@ -1,30 +1,25 @@
-<svg id="pictos" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65.66 44.58">
-  <defs>
-    <style>
-      .cls-1, .cls-2, .cls-3 {
-        fill: none;
-        stroke: #000;
-        stroke-linejoin: round;
-      }
-
-      .cls-1 {
-        stroke-width: 1.97px;
-      }
-
-      .cls-2 {
-        stroke-linecap: round;
-      }
-
-      .cls-2, .cls-3 {
-        stroke-width: 1.97px;
-      }
-    </style>
-  </defs>
-  <title>contact-n</title>
-  <g>
-    <rect class="cls-1" x="0.98" y="0.98" width="63.69" height="42.62" rx="5.67" ry="5.67"/>
-    <path class="cls-2" d="M3.23,3L30.94,27.64a2.85,2.85,0,0,0,3.78,0L62.43,3"/>
-    <line class="cls-3" x1="41.77" y1="21.37" x2="62.52" y2="41.51"/>
-    <line class="cls-3" x1="3.17" y1="41.54" x2="24.23" y2="21.66"/>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="pictos" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 65.7 44.6" style="enable-background:new 0 0 65.7 44.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;fill:#009F1B;stroke:#FFFFFF;stroke-width:1.966;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{display:none;fill:#C2C2C2;}
+	.st2{fill:none;stroke:#FFFFFF;stroke-width:1.966;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#FFFFFF;stroke-width:1.966;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#FFFFFF;stroke-width:1.966;stroke-linecap:round;stroke-miterlimit:10;}
+	.st5{fill:#FFFFFF;}
+	.st6{fill:none;stroke:#FFFFFF;stroke-width:1.966;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st7{fill:none;stroke:#000000;stroke-width:1.966;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st8{fill:none;stroke:#000000;stroke-width:1.966;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<rect x="-2.6" y="-11" class="st0" width="136.2" height="61.7"/>
+<rect x="-438.9" y="-516.9" class="st1" width="1278.5" height="797.1"/>
+<g>
+	<path class="st7" d="M51.5,37.6H14.1c-3.1,0-5.7-2.5-5.7-5.7V12.6C8.4,9.5,11,7,14.1,7h37.4c3.1,0,5.7,2.5,5.7,5.7v19.3
+		C57.2,35.1,54.7,37.6,51.5,37.6z"/>
+	<path class="st8" d="M10.2,8.5l21.2,16.9c0.8,0.7,2.1,0.7,2.9,0L55.5,8.5"/>
+	<line class="st7" x1="39.7" y1="20.6" x2="55.6" y2="36"/>
+	<line class="st7" x1="10.1" y1="36" x2="26.2" y2="20.8"/>
+</g>
 </svg>

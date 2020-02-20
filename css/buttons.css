@@ -10,17 +10,28 @@
 	h3.activite {
 		width: 100% !important;
 	}
-	a.portfolio img, a.contact img{width:40vw !important;}
-	a.cv img{width:10vw !important;}
-	a.portfolio, a.cv, a.contact {
-		margin: 3vw !important;
+	.title {
+		box-shadow: 0px -16px 25px black;
 	}
-	a.contact {
-		top: 1vw;
+	.title-m {
+		bottom: 0px;
+		box-shadow: 0px 16px 25px black;
+	}
+	a.pictos, button.pictos {
+		position: relative !important;
+	}
+	a.pictos img, button.pictos img{
+		width: 15vw !important;
+	}
+	a.portfolio, a.cv, a.contact, a.download, button.pictos {
+		margin: 1vw 3vw !important;
+		left: auto !important;
+		right: auto !important;
+		top: auto !important;
 		bottom: auto !important;
 	}
-	.projets a.contact {
-		top: 3vw;
+	a.contact img:hover, a.download img:hover, a.cv img:hover, a.portfolio img:hover, button.pictos img:hover {
+		transform: translateX(10px) translateY(0px) !important;
 	}
 	a.toc {
 		flex-direction: column !important;
@@ -29,6 +40,9 @@
 		width: 20px !important;
 		height: 20px !important;
 		margin: 0px 15px !important;
+	}
+	.project-button {
+		height: max-content;
 	}
 }
 button {
@@ -46,7 +60,7 @@ a {
   text-decoration: none;
 	width: max-content;
 }
-.a.pictos:link, a.pictos:active, a.pictos:visited, a.pictos{
+a.pictos:link, a.pictos:active, a.pictos:visited, a.pictos{
   color:unset;
 }
 /*
@@ -61,21 +75,43 @@ a.toc {
 	flex-direction: row;
 	align-items: center;
 }
-
 a.toc:hover .point {
 	border: 1px solid white;
 }
+.title-m {
 
-button.pictos, .contact a.pictos, .contact a.cv, .contact a.portfolio {
-	position: relative;
-	right: auto;
 }
-a.portfolio, a.cv {
+a.pictos, button.pictos {
+	display: flex;
 	position: fixed;
-	z-index: 3;
-	top: 1vw;
-	right: 1vw;
+	z-index: 15;
+	bottom: 1vw;
 }
+a.portfolio, a.cv, button.pictos {
+	left: 1vw;
+}
+a.contact {
+	left: 6vw;
+}
+a.download {
+	left: 11vw;
+}
+
+a.portfolio img, a.contact img, button.contact img, a.cv img, a.download img, button.pictos img {width:4vw;}
+/*
+a.portfolio img, a.cv img {
+ transition: transform 300ms ease-in-out;
+}
+a.portfolio img:hover{
+ transform: translateX(-10px) translateY(10px);
+}*/
+a.contact img, a.portfolio img, a.cv img, a.download img, button.pictos img {
+	transition: transform 300ms ease-in-out;
+}
+a.contact img:hover, a.download img:hover, a.cv img:hover, a.portfolio img:hover, button.pictos img:hover {
+	transform: translateX(10px) translateY(-10px);
+}
+
 .contact-box a.portfolio, .contact-box a.cv {
 	position: relative;
 	top: 0px;
@@ -83,35 +119,10 @@ a.portfolio, a.cv {
 	padding: 20px;
 	margin: 0px 5px;
 }
-button.contact, a.contact {
-	position: fixed;
-	z-index: 15;
-	bottom: 1vw;
-	left: 1vw;
+.contact a.pictos, .contact a.cv, .contact a.portfolio {
+	position: relative;
+	right: auto;
 }
-
-a.portfolio img, a.contact img, button.contact img {width:4vw;}
-a.cv img {width:3vw;}
-
-a.cv img {
-	transition: transform 300ms ease-in-out;
-}
-a.cv img:hover {
-	transform: translateX(-10px) translateY(10px);
-}
-a.portfolio img {
- transition: transform 300ms ease-in-out;
-}
-a.portfolio img:hover{
- transform: translateX(-10px) translateY(10px);
-}
-a.contact img, button.contact img {
-	transition: transform 300ms ease-in-out;
-}
-a.contact img:hover, button.contact img:hover {
-	transform: translateX(10px) translateY(-10px);
-}
-
 .activites a {
   width: 100%;
   height: 100%;

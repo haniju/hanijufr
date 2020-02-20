@@ -14,8 +14,23 @@
     flex-direction: row !important;
   	height: auto !important;
     width: 100% !important;
-  	bottom: 0px !important;
+  	top: 0px !important;
+  }
+  .title-m {
+    flex-direction: row !important;
+    height: auto !important;
+    width: 100% !important;
+    bottom: 0px !important;
     top: auto !important;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    z-index: 20;
+  }
+  .title-book {
+    background-color: white;
   }
   .couleurs {
     flex-direction: row !important;

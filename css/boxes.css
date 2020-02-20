@@ -36,13 +36,13 @@
 		margin-right: 0px !important;
 		width: 95% !important;
 		padding: 15px !important;
-		padding-top: 45px !important;
+		padding-top: 33px !important;
 	}
 	.activites:first-of-type {align-self: center !important; margin-left:0px !important;margin-top:45px !important;}
 	.activites:nth-of-type(2) {align-self: center !important; margin-left:0px !important; margin-top:45px !important;}
 	.activites:nth-of-type(3) {margin-top:45px !important;}
 	.activites:nth-of-type(4) {align-self: center !important; margin-left:0px !important; margin-top:45px !important;}
-	.activites:last-of-type {margin-top:45px !important; margin-bottom:85px !important;}
+	.activites:last-of-type {margin-top:45px !important; margin-bottom:65px !important;}
 	.tag {
 		flex-direction: row !important;
 		flex-wrap: wrap;
@@ -62,6 +62,13 @@
 		font-weight: 700 ;
 		font-size: 13px !important;
 	}
+	.bande {
+		width: 100%;
+	}
+	.contact-box {
+		height: auto !important;
+	}
+	.contact-box .activites:nth-of-type(2) {margin-bottom:145px !important;}
 }
 
 /* Page cv */

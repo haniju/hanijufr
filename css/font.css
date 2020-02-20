@@ -28,6 +28,9 @@
   }
   .home h1 {
     text-align: left;
+    top: -5px !important;
+    left: -1px !important;
+    font-weight: 700;
   }
   h2{
     font-size:14px !important;
@@ -38,7 +41,8 @@
     height: auto !important;
   }
   .tag h2 {
-    margin: 2px 7px;
+    margin: 2px 7px !important;
+    font-size: 13px !important;
   }
   .projets .intro p {
     width: 90vw !important;
@@ -54,14 +58,20 @@
   h3 {
     font-size: 60px !important;
     line-height: 100% !important;
-    margin: 50px 0px !important;
+    margin: 0px 0px !important;
     margin-top: 70px !important;
   }
   h4 {
-    font-size: 20px !important;
-    animation: color-change 6s infinite;
-    margin-bottom: 20px !important;
+    font-size: 25px !important;
+    margin-bottom: 70px !important;
     text-align: center;
+  }
+  h4:hover {
+    animation: color-change 6s infinite;
+  }
+  .contact-box h4 {
+    margin-bottom: 10px !important;
+    animation: color-change 6s infinite;
   }
   #long {top: -10px !important}
   p {
