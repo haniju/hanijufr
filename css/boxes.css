@@ -108,7 +108,6 @@
 /*position & deco blocs cv*/
 .activites:first-of-type {align-self: flex-start; margin-left:50px;}
 .activites:nth-of-type(2) {align-self: flex-end; margin-left:50px; margin-top:-5px;}
-.activites:nth-of-type(3) {margin-top:31px;}
 .activites:nth-of-type(4) {align-self: flex-end; margin-left:50px; margin-top:40px;}
 .activites:last-of-type {margin-top:12px; margin-bottom:150px;}
 
@@ -229,6 +228,11 @@ a:nth-child(5) .point{background-color: var(--h4);}
 .contact-box .activites:first-of-type {align-self: center; margin-left:-50px;}
 .contact-box .activites:nth-of-type(2) {align-self: center; margin-left:335px; margin-top: 50px;}
 
+.bonus:nth-of-type(3) {margin-top:15%; background-color: white;}
+.bonus:nth-of-type(3) .deco {background-color: white;}
+.bonus:nth-of-type(3) .deco::after {background-color: white;}
+.bonus:nth-of-type(3)::after {background-color: white;}
+
 .contact-list {
 	display: flex;
 	width: 100%;
@@ -254,5 +258,5 @@ a:nth-child(5) .point{background-color: var(--h4);}
   align-items: center;
 }
 .contact-box h4 {
-  font-size: 2vw;
+  font-size: 1.5vw;
 }

@@ -25,18 +25,36 @@
 </head>
 
 <body id="fond">
-  <a class="pictos portfolio" href="dp.html">
-    <img src="images/picto-28.svg">
-  </a>
   <div class="title">
     <div class="couleurs" id="fond-couleur">
-      <a id="id2" onmouseover="int()" ontouchstart="int()"><span class="point"></span></a>
-      <a id="id3" onmouseover="fermee()" ontouchstart="fermee()"><span class="point"></span></a>
+      <a id="id2" onmouseover="int()" ontouchstart="int()"><p>Ouvrir</p></a>
+      <a id="id3" onmouseover="fermee()" ontouchstart="fermee()"><p>Fermer</p></a>
     </div>
   </div>
-  <a class="pictos contact" href="contact.html">
-    <img src="images/picto-29.svg">
-  </a>
+  <style>
+  a {
+    width: 100%;
+  }
+  a p {
+    color: black;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 3vw;
+  }
+  a:hover p {
+    animation: color-change 6s infinite;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .title, .couleurs {
+    width: 100% !important;
+  }
+  .balaine {
+    z-index: 10;
+  }
+  </style>
   <div class="container-bal">
     <div class="balaine">
       <img id="dos2" class="dessus" src="images/svg/7_dos-int.png">
@@ -48,6 +66,12 @@
       <img id="dos" class="dessus" src="images/svg/1_dos.png">
     </div>
     <p>
+      Orque n.f.<br>
+      Autre nom de l'épaulard.
+      Grande cétacée odontocète (delphinidée) à pelage noir et blanc, porteuse d'une
+      grande nageoire dorsale et qui se nourrit de poissons ou attaque d'autres
+      mammifères marins (baleine, phoque). [L'épaulard est social, intelligent,
+      aisé à dresser.]<br>
       L'orque, à l'instar du grand cachalot, est un superprédateur.
       Au sommet de la chaîne alimentaire, elle ne connaît aucun ennemi naturel.
     </p>
